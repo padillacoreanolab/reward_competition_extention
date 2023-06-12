@@ -1,2 +1,44 @@
-# Environment Installation Commands
+# Conda Environment Installation Commands
+
+## Spike Interface Environment with Pip from Conda
+```
+# https://github.com/SpikeInterface/spikeinterface 
+conda create -n spike_interface_0_97_1 python=3.9 --yes
+conda activate spike_interface_0_97_1
+
+# Installing Spikeinterface
+pip install spikeinterface[full,widgets]==0.97.1
+# Installing Spike sorters
+pip install mountainsort4
+pip install --upgrade mountainsort5
+# Installing Spectral Connectivty
+conda install -c edeno spectral_connectivity --yes
+# Installing Jupyter Notebook
+conda install -c conda-forge notebook --yes
+
+# Installing Git Library to get root directory of repo
+conda install -c conda-forge gitpython
+# To use GPU for spectral connectivity
+# NOTE: Change Cuda version based on your local Cuda
+conda install -c conda-forge cupy cudatoolkit=11.0
+
+# To label inlines and other plots
+pip install matplotlib-label-lines
+conda install -c conda-forge seaborn
+
+# To look at videos
+conda install -c conda-forge opencv
+```
+
+
+## Phy Environment
+
+```
+conda deactivate
+conda create -p ./phy_env python=3.9 --yes
+conda activate ./phy_env 
+
+# Installing phy
+pip install phy --pre --upgrade
+```
 
