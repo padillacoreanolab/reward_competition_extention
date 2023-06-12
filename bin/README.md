@@ -24,10 +24,12 @@ conda install -c conda-forge cupy cudatoolkit=11.0
 
 # To label inlines and other plots
 pip install matplotlib-label-lines
-conda install -c conda-forge seaborn
+conda install -c conda-forge seaborn -y
 
 # To look at videos
-conda install -c conda-forge opencv
+# NOTE: This may take a long time to install
+# NOTE: Not installed on spike_interface_0_97_1 because it was taking forever
+# conda install -c conda-forge opencv
 ```
 
 
