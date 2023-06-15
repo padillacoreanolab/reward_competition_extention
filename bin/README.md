@@ -32,6 +32,11 @@ conda install -c conda-forge seaborn -y
 # conda install -c conda-forge opencv
 ```
 
+# SLEAP Environment
+conda create -y -n sleap_1_3_0 -c sleap -c nvidia -c conda-forge sleap=1.3.0
+
+
+#####################  OLD BELOW ######################
 
 ## Phy Environment
 
