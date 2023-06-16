@@ -33,8 +33,10 @@ conda install -c conda-forge seaborn -y
 ```
 
 # SLEAP Environment
-conda create -y -n sleap_1_3_0 -c sleap -c nvidia -c conda-forge sleap=1.3.0
+conda create -y -n sleap_1_3_0 -c sleap -c nvidia -c conda-forge sleap=1.3.0 
 
+# Phy Environment
+conda create -n phy2 -y cython dask h5py joblib matplotlib numpy pillow pip pyopengl pyqt pyqtwebengine pytest python qtconsole requests responses scikit-learn scipy traitlets -y
 
 #####################  OLD BELOW ######################
 
