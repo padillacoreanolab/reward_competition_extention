@@ -28,7 +28,7 @@ track_with_sleap() {
         --tracking.similarity iou --tracking.match greedy \
         --tracking.clean_instance_count ${number_of_subjects} \
         --tracking.target_instance_count ${number_of_subjects} \
-        --batch_size 4 \
+        --batch_size 1 \
         -m ${model_directory} \
         -o ${output_file}
 
