@@ -40,7 +40,7 @@ track_with_sleap() {
     echo "${output_file}" >> sleap_tracked_files.txt
 }
 
-for full_path in ${video_directory}/*/*/*fixed.mp4; do
+for full_path in ${video_directory}/*/*/*/*fixed.mp4; do
     echo "Currently starting: ${full_path}"
 
     dir_name=$(dirname ${full_path})
