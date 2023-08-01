@@ -111,109 +111,154 @@ def read_trodes_extracted_data_file(filename):
 
         return fields_text
 
+##########################
+##########################
+##########################
+
+
+
 def get_key_with_substring(input_dict, substring="", return_first=True):
     """
+    Returns keys from a dictionary that contains a specified substring.
+    
+    Args:
+        input_dict (dict): The dictionary to search.
+        substring (str, optional): The substring to search for in the keys. Defaults to "".
+        return_first (bool, optional): If True, returns the first key that contains the substring.
+            If False, returns a list of all keys that contain the substring. Defaults to True.
+
+    Returns:
+        str or list: A key or a list of keys from the input dictionary that contains the substring.
+            If the substring is an empty string, returns the first key from the dictionary 
+            or a list of all keys, depending on the value of 'return_first'. 
+            If the substring is itself a key in the dictionary, returns the substring.
+            If no keys contain the substring, returns an empty string or list.
     """
-    keys_with_substring = []
-    for key in input_dict.keys():
-        if substring in key:
-            keys_with_substring.append(key)
+    # Find all keys that contain the substring
+    keys_with_substring = [key for key in input_dict.keys() if substring in key]
+
+    # If the substring is itself a key in the dictionary, return it
     if substring in keys_with_substring:
         return substring
-    elif return_first:
+
+    # If 'return_first' is True, return the first key that contains the substring
+    # If no keys contain the substring, return an empty string
+    elif return_first and keys_with_substring:
         return keys_with_substring[0]
+    
+    # If 'return_first' is False, return a list of all keys that contain the substring
+    # If no keys contain the substring, return an empty list
     else:
         return keys_with_substring
 
 def get_all_file_suffixes(file_name):
     """
-    Creates a string of the suffixes of a file name that's joined together by "."
-    Suffixes will be all the parts of the file name that follows the first "."
-    Example: "file.txt.zip.asc" >> "txt.zip.asc"
-    
+    Creates a string of the suffixes of a file name that's joined together by ".".
+    Suffixes will be all the parts of the file name that follow the first ".".
+    Example: If file_name is "file.txt.zip.asc", the output will be "txt.zip.asc".
+
     Args:
-        file_name(str): Name of the file
+        file_name (str): Name of the file.
 
     Returns:
-        String of all the suffixes joined by "."
+        str: A string of all the suffixes joined by ".", or a single "." if no suffixes exist.
     """
-    # Getting all the suffixes in the file name
-    # And removing any periods before and after
-    stripped_suffixes = [suffix.strip(".") for suffix in pathlib.Path(file_name).suffixes]
+    # Extract all the suffixes in the file name using pathlib.Path().suffixes
+    # This will return a list of suffixes.
+    suffixes = pathlib.Path(file_name).suffixes
+
+    # Strip any periods from the beginning or end of each suffix
+    stripped_suffixes = [suffix.strip(".") for suffix in suffixes]
     
+    # If there are suffixes, join them together with periods and return the result
     if stripped_suffixes:
-        return ".".join(stripped_suffixes) 
-    # When the file name is just a ".", the stripped suffix is blank
+        return ".".join(stripped_suffixes)
+    
+    # If there are no suffixes (i.e., the file name is just "."), return a single period
     else:
         return "."
 
 def update_trodes_file_to_data(file_path, file_to_data=None):
     """
-    Get the data/metadata froma a Trodes recording file. Save it to a dictionary with the file name as the key. 
-    And the name of the data/metadata(sub-key) and the data/metadata point(sub-value) as a subdictionary for the value. 
+    Extracts the data and metadata from a Trodes recording file and stores it in a dictionary.
+    The dictionary keys are file names, and the values are sub-dictionaries of data and metadata points.
 
     Args:
-        file_path(str): Path of the Trodes recording file. Can be relative or absolute path.
-        file_to_data(dict): Dictionary that had the trodes file name as the key and the 
+        file_path (str): Path to the Trodes recording file. The path can be relative or absolute.
+        file_to_data (dict, optional): An existing dictionary to which the data will be added. If None, a new dictionary is created. Defaults to None.
 
     Returns:
-        Dictionary that has file name keys with a subdictionary of all the different data/metadata from the Trodes recording file.
+        dict: A dictionary where each key is a file name and each value is a sub-dictionary containing data and metadata from the Trodes recording file.
+
+    Raises:
+        A warning if the Trodes recording file cannot be processed.
     """
-    # Creating a new dictionary if none is inputted
-    if file_to_data is None: 
+    # Create a new dictionary if none is provided
+    if file_to_data is None:
         file_to_data = defaultdict(dict)
-    # Getting just the file name to use as the key
+    
+    # Get just the file name to use as the key
     file_name = os.path.basename(file_path)
-    # Getting the absolute file path as metadata
+    
+    # Get the absolute file path as metadata
     absolute_file_path = os.path.abspath(file_path)
+    
     try:
-        # Reading in the Trodes recording file with the function 
+        # Read the Trodes recording file data
         trodes_recording = parse_exported_file(absolute_file_path)
 
-        file_prefix = get_all_file_suffixes(file_name) 
-        print("file prefix: {}".format(file_prefix))
+        file_prefix = get_all_file_suffixes(file_name)
+        print(f"file prefix: {file_prefix}")
+        
+        # Store the data and metadata in the dictionary
         file_to_data[file_prefix] = trodes_recording
         file_to_data[file_prefix]["absolute_file_path"] = absolute_file_path
         return file_to_data
     except:
-        # TODO: Fix format so that file path is included in warning
-        warnings.warn("Can not process {}".format(absolute_file_path))
+        # Issue a warning if the file cannot be processed
+        warnings.warn(f"Cannot process {absolute_file_path}")
         return None
 
 def get_all_trodes_data_from_directory(parent_directory_path="."):
     """
-    Goes through all the files in a directory created by Trodes. 
-    Each file is organized into a dictionary that is directory name to the file name to associated data/metadata of the file.
-    The structure would look something like: result[current_directory_name][file_name][data_type]
+    Extracts data and metadata from all Trodes files in a given directory and its subdirectories. 
+    The data is organized in a dictionary where the keys are directory names and the values are 
+    dictionaries with file names as keys and associated data/metadata as values.
 
     Args:
-        parent_directory_path(str): Path of the directory that contains the Trodes recording files. Can be relative or absolute path.
+        parent_directory_path (str): Path to the parent directory containing the Trodes recording files. 
+                                     This can be a relative or absolute path. Defaults to the current directory.
 
     Returns:
-        Dictionary that has the Trodes directory name as the key and a subdictionary as the values. 
-        This subdictionary has all the files as keys with the corresponding data/metadata from the Trodes recording file as values.
+        dict: A dictionary where each key is a directory name and each value is a sub-dictionary containing 
+              file names as keys and corresponding data/metadata from Trodes recording files as values.
     """
     directory_to_file_to_data = defaultdict(dict)
-    # Going through each directory
+    
+    # Iterate over all items in the parent directory
     for item in os.listdir(parent_directory_path):
         item_path = os.path.join(parent_directory_path, item)
-        # Getting the directory name to save as the key
+        
+        # If the item is a directory, use its name as a key
         if os.path.isdir(item_path):
             current_directory_name = os.path.basename(item_path)
-        # If the item is a file instead of a directory
+        # If the item is a file, use the parent directory name as a key
         else:
             current_directory_name = "."
+        
         directory_prefix = get_all_file_suffixes(current_directory_name) 
-
         current_directory_path = os.path.join(parent_directory_path, current_directory_name)
-        # Going through each file in the directory
+        
+        # Iterate over all files in the current directory
         for file_name in os.listdir(current_directory_path):
             file_path = os.path.join(current_directory_path, file_name)
             if os.path.isfile(file_path):
-                # Creating a sub dictionary that has file keys and a sub-sub dictionary of data type to data value 
-                current_directory_to_file_to_data = update_trodes_file_to_data(file_path=file_path, file_to_data=directory_to_file_to_data[current_directory_name])
-                # None will be returned if the file can not be processed
+                # Update the dictionary with data/metadata from the current file
+                current_directory_to_file_to_data = update_trodes_file_to_data(file_path=file_path, 
+                                                                               file_to_data=directory_to_file_to_data[current_directory_name])
+                # If the file was processed successfully, update the main dictionary
                 if current_directory_to_file_to_data is not None:
                     directory_to_file_to_data[directory_prefix] = current_directory_to_file_to_data
+    
     return directory_to_file_to_data
 
