@@ -46,9 +46,12 @@ DIM J = 6000 \port_entry_hours computer clock time (hours every time red light t
 
 \Original List of ITIs
 
-LIST V = 80", 90", 80", 75", 100", 95", 90", 80", 90", 100", 90", 120", 90", 85", 90", 95", 120", 80", 95", 80", 90", 80", 75", 100", 95", 90", 80", 90", 100", 90", 120", 90", 85", 90", 95", 90", 80", 90", 100", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90", 90" \, 100", 108", 117", 121", 133", 145", 165" \CS ITI values (tone + houselight)
+LIST V = 120", 115", 90", 55", 50", 95", 75", 105", 50", 80", 65", 65", 50", 70", 95", 80", 70", 110", 60", 300", 60", 55", 65", 55", 50", 50", 105", 120", 120", 110", 85", 120", 60", 65", 60", 75", 100", 95", 50", 999"  \CS ITI values (tone + houselight)
 
 
+\ Boolean of whether reward is given
+\ Omission trials on trial 24, 28, 33, 39
+LIST O = 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1
 
 \Counter and Flag array
 DIM C = 6
@@ -135,7 +138,7 @@ DIM C = 6
 
 \W - ITI values used for CS one each trial
 
-\X -
+\X - Current reward or not value (0 or 1)
 
 \Y - Beam break monitor variable
 
@@ -226,10 +229,8 @@ S2,
     60":  ---> S3
 
 S3,
-
-  D#T:  SET K(C(1)) = 1; SET D = V(C(1)); ADD C(1); SHOW 10, Current ITI, D; Z2 ---> S3
-
-
+\\\
+  D#T:  SET K(C(1)) = 1; SET D = V(C(1)); SET X = O(C(1)); ADD C(1); SHOW 10, Current ITI, D; Z2 ---> S3
 
 \ Turn on CS stimulus and recording time on the computer
 
@@ -281,9 +282,11 @@ S1,
 
 S2,
 
-    4": on^pump; SET Q(C(2)) = T; SET R(C(2)) = (T - U)*100; SHOW 12, USLatency, R(C(2)); ADD C(2); SET Q(C(2)) = -987.987; SET R(C(2) + 1) = -987.987; ADD C(6); SHOW 11, NumSucroseDeliveries, C(6)  ---> S3         \increment sucrose delivery counter
+    4":  IF X = 1 [@yesRewarded, @noRewarded]
 
+                 @yesRewarded: on^pump; SET Q(C(2)) = T; SET R(C(2)) = (T - U)*100; SHOW 12, USLatency, R(C(2)); ADD C(2); SET Q(C(2)) = -987.987; SET R(C(2) + 1) = -987.987; ADD C(6); SHOW 11, NumSucroseDeliveries, C(6)  ---> S3
 
+                 @noRewarded: ---> S1
 
 \ Reset "port entered" flag,
 
@@ -341,11 +344,11 @@ S2,
 
     \\\ Uncomment for Reward Training
 
-    61': off^whitenoise---> stopabortflush \when time is up, store data and turn off everything.
+    \ 61': off^whitenoise---> stopabortflush \when time is up, store data and turn off everything.
 
     \\\ Uncomment for Reward Competition
 
-   \ 31': off^whitenoise; ---> stopabortflush \when time is up, store data and turn off everything.
+    61': off^whitenoise; ---> stopabortflush \when time is up, store data and turn off everything.
 
 
 

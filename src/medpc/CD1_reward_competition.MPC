@@ -36,11 +36,11 @@ DIM H = 250 \controlled_stimulus_minutes computer clock time (minutes on clock e
 
 DIM I = 250 \controlled_stimulus_hours computer clock time (hours every time yellow light/tone turns on)
 
-DIM B = 2500 \port_entry_seconds computer clock time (seconds on clock every time red light turns on)
+DIM B = 6000 \port_entry_seconds computer clock time (seconds on clock every time red light turns on)
 
-DIM F = 2500 \port_entry_minutes computer clock time (minutes on clock every time red light turns on)
+DIM F = 6000 \port_entry_minutes computer clock time (minutes on clock every time red light turns on)
 
-DIM J = 2500 \port_entry_hours computer clock time (hours every time red light turns on)
+DIM J = 6000 \port_entry_hours computer clock time (hours every time red light turns on)
 
 
 
@@ -91,7 +91,7 @@ DIM C = 6
 
 \A - Time since last CS
 
-\B - 
+\B -
 
 \C - Counter array
 

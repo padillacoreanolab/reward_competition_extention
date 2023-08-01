@@ -1,0 +1,302 @@
+\INPUTS
+^leftport = 7
+^rightport = 8
+
+
+\OUTPUTS
+^whitenoise = 1
+^tone1 = 2
+^tone2 = 3
+^leftpump = 10
+^rightpump = 9
+
+^fan = 16
+^toneled = 17
+^leftpeled = 19
+^rightpeled = 18
+
+
+
+\ARRAYS
+
+DIM P = 20000 \Right Port entry time stamp array
+DIM K = 20000 \Left Port entry time stamp array
+
+DIM Q = 250 \US delivery time stamp array (absolute)
+
+DIM R = 250 \US time stamp array (relative to last CS)
+
+DIM W = 2500 \ITI values used for CS
+
+DIM S = 2500 \CS presentation values (absolute - every time yellow light turns on)
+
+DIM N = 20000 \Right Port exit time stamp array
+DIM E = 20000 \Left Port exit time stamp array
+
+DIM G = 250 \controlled_stimulus_seconds computer clock time (seconds on clock every time yellow light/tone turns on)
+
+DIM H = 250 \controlled_stimulus_minutes computer clock time (minutes on clock every time yellow light/tone turns on)
+
+DIM I = 250 \controlled_stimulus_hours computer clock time (hours every time yellow light/tone turns on)
+
+DIM B = 6000 \Right port_entry_seconds computer clock time (seconds on clock every time red light turns on)
+DIM L = 6000 \Left port_entry_seconds computer clock time (seconds on clock every time red light turns on)
+
+DIM F = 6000 \Right port_entry_minutes computer clock time (minutes on clock every time red light turns on)
+DIM O = 6000 \Left port_entry_minutes computer clock time (minutes on clock every time red light turns on)
+
+DIM J = 6000 \Right port_entry_hours computer clock time (hours every time red light turns on)
+DIM Z = 6000 \Left port_entry_hours computer clock time (hours every time red light turns on)
+
+
+
+\Original List of ITIs
+LIST V = 120", 115", 90", 55", 50", 95", 75", 105", 50", 80", 65", 65", 50", 70", 95", 80", 70", 110", 60", 480", 60", 55", 65", 55", 50", 50", 105", 120", 120", 110", 85", 120", 60", 65", 60", 75", 100", 95", 50", 999"  \CS ITI values (tone + houselight)
+
+
+\Counter and Flag array
+DIM C = 8
+
+\are all 1-indexed i.e. 3 port entries means 3 port entries
+
+\C(0) counter for number of right port entries
+\C(7) counter for number of left port entries
+
+\C(1) counter for CS presentation number
+
+\C(2) counter for US delivery
+
+\C(4) counter for number of right port exits
+\C(8) counter for number of left port exits
+
+\C(5) number of CS1 (tones)
+
+\C(6) number of sucrose deliveries
+
+
+\Z-pulses
+
+\Z1: start task after initial delay
+
+\Z2: start of CS
+
+\Z3: right port entry
+\Z10: left port entry
+
+\Z4: right port exit
+\Z11: left port exit
+
+\Z5: trigger CS1
+
+\Z6: turn off CS1 triggers
+
+
+\Variables
+
+\A - Time since last CS
+
+\B -
+
+\C - Counter array
+
+\D - Current ITI value
+
+\E - Left Port exit time stamp array
+
+\F -
+
+\G -
+
+\H -
+
+\I -
+
+\J -
+
+\K - CS type
+
+\L -
+
+\M - CS type repo
+
+\N - Right Port exit time stamp array
+
+\O -
+
+\P - Right Port entry time stamp array
+
+\Q - Sucrose delivery time stamp array (absolute)
+
+\R - Sucrose delivery time stamp array (relative to last CS)
+
+\S - CS presentation time stamp array
+
+\T - Session timer
+
+\U - Time since last CS presentation
+
+\V - List of CS ITI values (tone + toneled)
+
+\W - ITI values used for CS one each trial
+
+\X -
+
+\Y - Beam break monitor variable
+
+\Z -
+
+
+DISKVARS = A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z
+
+DISKCOLUMNS = 1
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ RIGHT PORT ENTRY START \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\Detect port entry
+S.S.1,
+S1,
+    #start: Z1 ---> S2
+
+S2,
+\\ #R^port is checking the input of the port
+\\ Y - Beam break monitor variable
+    #R^rightport: ADD Y; IF Y >= 2 [@RightBeamBreak, @RightNoBeamBreak]
+                 @RightBeamBreak: off^rightpeled; Z3; SET Y = 0 ---> S3
+                 @RightNoBeamBreak: ---> SX
+    0.02": on^rightpeled; SET Y = 0 ---> S2
+
+S3,
+    0.02": Z4 ---> S2
+    #R^rightport: ---> S3
+
+\After port entry
+S.S.2,
+S1,
+    #Z3: SET B(C(0)) = CURRENTSECONDS; SET F(C(0)) = CURRENTMINUTES; SET J(C(0)) = CURRENTHOURS; SET P(C(0)) = T; SHOW 5, RightLastPortEntry, P(C(0)); ADD C(0); SET P(C(0)) = -987.987; SHOW 6, RightTotalPortEntries, C(0) ---> S1
+
+\After port exit
+S.S.3,
+S1,
+    #Z4: SET N(C(4)) = T; SHOW 7, RightLastPortExit, N(C(4)); ADD C(4); SET N(C(4)) = -987.987; SHOW 8, RightTotalPortExits, C(4) ---> S1
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ RIGHT PORT ENTRY END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ LEFT PORT ENTRY START \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+S.S.9,
+S1,
+   #start: ---> S2
+
+S2,
+\\ #R^port is checking the input of the port
+\\ Y - Beam break monitor variable
+    #R^leftport: ADD X; IF X >= 2 [@LeftBeamBreak, @LeftNoBeamBreak]
+                 @LeftBeamBreak: off^leftpeled; Z10; SET X = 0 ---> S3
+                 @LeftNoBeamBreak: ---> SX
+    0.02": on^leftpeled; SET X = 0 ---> S2
+
+S3,
+    0.02": Z11 ---> S2
+    #R^leftport: ---> S3
+
+\After port entry
+S.S.10,
+S1,
+    #Z10: SET L(C(7)) = CURRENTSECONDS; SET O(C(7)) = CURRENTMINUTES; SET Z(C(7)) = CURRENTHOURS; SET K(C(7)) = T; SHOW 9, LeftLastPortEntry, K(C(7)); ADD C(7); SET K(C(7)) = -987.987; SHOW 10, LeftTotalPortEntries, C(7) ---> S1
+
+\After port exit
+S.S.11,
+S1,
+    #Z11: SET E(C(8)) = T; SHOW 11, LeftLastPortExit, E(C(8)); ADD C(8); SET E(C(8)) = -987.987; SHOW 12, LeftTotalPortExits, C(8) ---> S1
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ LEFT PORT ENTRY END \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+\Calculate ITI for CS presentation
+S.S.12,
+S1,
+    #Z1: ---> S2
+
+\Initial delay
+S2,
+    60":  ---> S3
+
+S3,
+  D#T:  SET D = V(C(1)); ADD C(1); SHOW 3, Current ITI, D; Z2 ---> S3
+
+
+\ Turn on CS stimulus and recording time on the computer
+S.S.13,
+S1,
+\ Uncomment line of code below for competiton(30 minutes)
+\     #Z2: IF T >= 1800 [@overtime, @undertime]
+
+\ Uncomment line of code below for training(60 minutes)
+    #Z2: IF T >= 3900 [@overtime, @undertime]
+        @overtime: ---> SX
+        @undertime: ---> S2
+
+S2,
+    0.0001": SHOW 2, CSNumber, C(1); SET S(C(1) - 1) = T; SET G(C(1) - 1) = CURRENTSECONDS; SET H(C(1) - 1) = CURRENTMINUTES; SET I(C(1) - 1) = CURRENTHOURS; SET S(C(1)) = -987.987; off^toneled; ADD C(5); SHOW 15, nCS1, C(5); Z5 ---> S3
+
+S3,
+    10": Z6; ---> S1
+
+
+\Deliver US
+S.S.14,
+S1,
+    #Z2: ---> S2
+
+S2,
+    4": on^leftpump; on^rightpump; SET Q(C(2)) = T; SET R(C(2)) = (T - U)*100; SHOW 13, USLatency, R(C(2)); ADD C(2); SET Q(C(2)) = -987.987; SET R(C(2) + 1) = -987.987; ADD C(6); SHOW 14, NumSucroseDeliveries, C(6)  ---> S3         \increment sucrose delivery counter
+
+S3,
+    \ Uncomment for C57s
+    \0.5": off^leftpump; off^rightpump ---> S1
+
+    \ Uncomment for CD1s
+    1": off^leftpump; off^rightpump---> S1
+
+
+S.S.15,   \CS1
+S1,
+    #Z5: on^tone1; on^tone2 ---> S1
+
+S.S.16,
+S1,
+    #Z6: off^tone1; off^tone2; on^toneled ---> S1
+
+
+\ Session timer
+S.S.17,
+S1,
+    #start: SET T = 0 ---> S2
+
+S2,
+    0.01": SET T = T + 0.01 ---> S2
+
+
+\ Stop session after however many minutes
+S.S.18,
+S1,
+    #start: on^toneled; on^leftpeled; on^rightpeled; on^whitenoise; ---> S2
+
+S2,
+    65': off^whitenoise; ---> stopabortflush \when time is up, store data and turn off everything.
+
+
+\ On Screen clock
+S.S.19,
+S1,
+    #start: on^fan ---> S2
+
+S2,
+    1": SHOW 1, Clock, T; SET A = (T - U)*100; SHOW 4, TimeFromLastCS, A ---> SX
+
+
+\ Keep time since the start of CS presentation
+S.S.20,
+S1,
+    #Z2: SET U = T ---> S1
