@@ -9,10 +9,15 @@ conda activate spike_interface_0_97_1
 # Installing Spikeinterface
 pip install spikeinterface[full,widgets]==0.97.1
 # Installing Spike sorters
-pip install mountainsort4
+# pip install mountainsort4
 pip install --upgrade mountainsort5
 # Installing Spectral Connectivty
 conda install -c edeno spectral_connectivity --yes
+
+# Installing Medpc library
+pip install medpc2excel
+conda install -c anaconda openpyxl -y
+
 # Installing Jupyter Notebook
 conda install -c conda-forge notebook --yes
 
@@ -30,6 +35,11 @@ conda install -c conda-forge seaborn -y
 # NOTE: This may take a long time to install
 # NOTE: Not installed on spike_interface_0_97_1 because it was taking forever
 # conda install -c conda-forge opencv
+conda install -c conda-forge moviepy -y
+
+# Refactoring
+conda install flake8 -y
+pip install jupyterlab_flake8
 ```
 
 # SLEAP Environment
@@ -37,17 +47,4 @@ conda create -y -n sleap_1_3_0 -c sleap -c nvidia -c conda-forge sleap=1.3.0
 
 # Phy Environment
 conda create -n phy2 -y cython dask h5py joblib matplotlib numpy pillow pip pyopengl pyqt pyqtwebengine pytest python qtconsole requests responses scikit-learn scipy traitlets -y
-
-#####################  OLD BELOW ######################
-
-## Phy Environment
-
-```
-conda deactivate
-conda create -p ./phy_env python=3.9 --yes
-conda activate ./phy_env 
-
-# Installing phy
-pip install phy --pre --upgrade
-```
 

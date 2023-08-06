@@ -5,12 +5,18 @@ pickles/
 data/
 old/
 env/
+ipynb_checkpoints/
+.ipynb_checkpoints/
+*env/
+models/
 
 # Data Files
 *.mp4
 *.h264
 *.dat
 *.rec
+*.h5
+*.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
