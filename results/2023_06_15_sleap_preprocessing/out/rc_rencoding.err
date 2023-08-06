@@ -1,0 +1,336 @@
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, h264, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(progressive), 640x480, 30 fps, 30 tbr, 1200k tbn, 60 tbc
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.original.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 30 tbr, 1200k tbn, 1200k tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+[mp4 @ 0x55828636d2c0] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
+frame=    1 fps=0.0 q=-1.0 size=       0kB time=00:00:00.00 bitrate=384000.0kbits/s speed=N/A    frame=50799 fps=0.0 q=-1.0 size=  224256kB time=00:28:13.25 bitrate=1085.0kbits/s speed=3.39e+03x    frame=68330 fps=0.0 q=-1.0 Lsize=  296132kB time=00:37:57.61 bitrate=1065.1kbits/s speed=3.41e+03x    
+video:295419kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.241172%
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.original.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:37:57.65, start: 0.000000, bitrate: 1065 kb/s
+  Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 640x480, 1062 kb/s, 30 fps, 30 tbr, 1200k tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55e7a6a7fcc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55e7a6a7fcc0] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x55e7a6a7fcc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:1.00
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.fixed.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame= 1086 fps=0.0 q=21.0 size=    4352kB time=00:00:35.36 bitrate=1008.1kbits/s speed=69.8x    frame= 2161 fps=2144 q=24.0 size=    9216kB time=00:01:11.20 bitrate=1060.4kbits/s speed=70.6x    frame= 3156 fps=2092 q=21.0 size=   13568kB time=00:01:44.36 bitrate=1065.0kbits/s speed=69.2x    frame= 4097 fps=2040 q=22.0 size=   17664kB time=00:02:15.73 bitrate=1066.1kbits/s speed=67.6x    frame= 5071 fps=2021 q=20.0 size=   21760kB time=00:02:48.20 bitrate=1059.8kbits/s speed=  67x    frame= 6215 fps=2065 q=22.0 size=   26624kB time=00:03:26.33 bitrate=1057.0kbits/s speed=68.6x    frame= 7117 fps=2027 q=22.0 size=   30464kB time=00:03:56.40 bitrate=1055.7kbits/s speed=67.3x    frame= 8191 fps=2042 q=22.0 size=   34816kB time=00:04:32.20 bitrate=1047.8kbits/s speed=67.9x    frame= 9376 fps=2078 q=20.0 size=   39680kB time=00:05:11.70 bitrate=1042.9kbits/s speed=69.1x    frame=10566 fps=2108 q=22.0 size=   45056kB time=00:05:51.36 bitrate=1050.5kbits/s speed=70.1x    frame=11756 fps=2133 q=22.0 size=   50176kB time=00:06:31.03 bitrate=1051.2kbits/s speed=  71x    frame=12960 fps=2156 q=23.0 size=   55552kB time=00:07:11.16 bitrate=1055.5kbits/s speed=71.7x    frame=14109 fps=2167 q=21.0 size=   60416kB time=00:07:49.46 bitrate=1054.2kbits/s speed=72.1x    frame=15235 fps=2173 q=22.0 size=   65280kB time=00:08:27.00 bitrate=1054.8kbits/s speed=72.3x    frame=16419 fps=2186 q=24.0 size=   70400kB time=00:09:06.46 bitrate=1055.4kbits/s speed=72.7x    frame=17576 fps=2194 q=21.0 size=   75520kB time=00:09:45.03 bitrate=1057.5kbits/s speed=  73x    frame=18711 fps=2198 q=22.0 size=   80384kB time=00:10:22.86 bitrate=1057.2kbits/s speed=73.2x    frame=19892 fps=2207 q=21.0 size=   85504kB time=00:11:02.23 bitrate=1057.7kbits/s speed=73.5x    frame=21092 fps=2217 q=22.0 size=   90368kB time=00:11:42.23 bitrate=1054.2kbits/s speed=73.8x    frame=22203 fps=2217 q=24.0 size=   95488kB time=00:12:19.26 bitrate=1058.1kbits/s speed=73.8x    frame=23390 fps=2225 q=21.0 size=  100608kB time=00:12:58.83 bitrate=1058.2kbits/s speed=74.1x    frame=24542 fps=2228 q=23.0 size=  105728kB time=00:13:37.23 bitrate=1059.8kbits/s speed=74.2x    frame=25747 fps=2236 q=23.0 size=  110592kB time=00:14:17.40 bitrate=1056.6kbits/s speed=74.5x    frame=26965 fps=2244 q=21.0 size=  115712kB time=00:14:58.00 bitrate=1055.6kbits/s speed=74.7x    frame=28194 fps=2253 q=21.0 size=  120832kB time=00:15:38.96 bitrate=1054.2kbits/s speed=  75x    frame=29413 fps=2260 q=20.0 size=  125952kB time=00:16:19.60 bitrate=1053.3kbits/s speed=75.3x    frame=30580 fps=2263 q=22.0 size=  131072kB time=00:16:58.50 bitrate=1054.2kbits/s speed=75.4x    frame=31709 fps=2262 q=22.0 size=  135680kB time=00:17:36.13 bitrate=1052.4kbits/s speed=75.4x    frame=32731 fps=2255 q=17.0 size=  141056kB time=00:18:10.20 bitrate=1059.9kbits/s speed=75.1x    frame=33798 fps=2251 q=19.0 size=  146432kB time=00:18:45.76 bitrate=1065.6kbits/s speed=  75x    frame=34932 fps=2251 q=21.0 size=  150784kB time=00:19:23.56 bitrate=1061.6kbits/s speed=  75x    frame=36136 fps=2256 q=22.0 size=  155648kB time=00:20:03.70 bitrate=1059.3kbits/s speed=75.1x    frame=37305 fps=2258 q=20.0 size=  160256kB time=00:20:42.66 bitrate=1056.5kbits/s speed=75.2x    frame=38409 fps=2257 q=18.0 size=  164608kB time=00:21:19.46 bitrate=1053.9kbits/s speed=75.2x    frame=39314 fps=2244 q=22.0 size=  168192kB time=00:21:49.63 bitrate=1052.1kbits/s speed=74.8x    frame=40246 fps=2233 q=21.0 size=  171776kB time=00:22:20.70 bitrate=1049.6kbits/s speed=74.4x    frame=41220 fps=2226 q=21.0 size=  175616kB time=00:22:53.16 bitrate=1047.7kbits/s speed=74.1x    frame=42177 fps=2217 q=22.0 size=  179200kB time=00:23:25.06 bitrate=1044.8kbits/s speed=73.9x    frame=43194 fps=2213 q=22.0 size=  183296kB time=00:23:58.96 bitrate=1043.5kbits/s speed=73.7x    frame=44383 fps=2217 q=22.0 size=  187648kB time=00:24:38.60 bitrate=1039.6kbits/s speed=73.9x    frame=45602 fps=2222 q=23.0 size=  192512kB time=00:25:19.23 bitrate=1038.1kbits/s speed=  74x    frame=46827 fps=2228 q=19.0 size=  197376kB time=00:26:00.06 bitrate=1036.4kbits/s speed=74.2x    frame=48077 fps=2234 q=21.0 size=  202240kB time=00:26:41.73 bitrate=1034.3kbits/s speed=74.4x    frame=49302 fps=2239 q=21.0 size=  207104kB time=00:27:22.56 bitrate=1032.9kbits/s speed=74.6x    frame=50515 fps=2243 q=21.0 size=  211968kB time=00:28:03.00 bitrate=1031.8kbits/s speed=74.7x    frame=51761 fps=2248 q=22.0 size=  216832kB time=00:28:44.53 bitrate=1030.0kbits/s speed=74.9x    frame=52994 fps=2253 q=22.0 size=  221696kB time=00:29:25.63 bitrate=1028.6kbits/s speed=75.1x    frame=54236 fps=2258 q=21.0 size=  226560kB time=00:30:07.03 bitrate=1027.1kbits/s speed=75.2x    frame=55454 fps=2261 q=21.0 size=  231168kB time=00:30:47.63 bitrate=1024.9kbits/s speed=75.3x    frame=56710 fps=2266 q=23.0 size=  236288kB time=00:31:29.50 bitrate=1024.4kbits/s speed=75.5x    frame=57961 fps=2271 q=20.0 size=  240896kB time=00:32:11.20 bitrate=1021.9kbits/s speed=75.7x    frame=59210 fps=2275 q=22.0 size=  245504kB time=00:32:52.83 bitrate=1019.4kbits/s speed=75.8x    frame=60452 fps=2279 q=20.0 size=  250368kB time=00:33:34.23 bitrate=1018.3kbits/s speed=75.9x    frame=61687 fps=2282 q=19.0 size=  255232kB time=00:34:15.40 bitrate=1017.3kbits/s speed=76.1x    frame=62921 fps=2286 q=21.0 size=  259840kB time=00:34:56.53 bitrate=1015.3kbits/s speed=76.2x    frame=64175 fps=2290 q=20.0 size=  264960kB time=00:35:38.33 bitrate=1015.1kbits/s speed=76.3x    frame=65417 fps=2293 q=20.0 size=  269568kB time=00:36:19.73 bitrate=1013.1kbits/s speed=76.4x    frame=66657 fps=2296 q=20.0 size=  274432kB time=00:37:01.06 bitrate=1012.2kbits/s speed=76.5x    frame=67920 fps=2300 q=20.0 size=  279296kB time=00:37:43.16 bitrate=1011.0kbits/s speed=76.6x    frame=68330 fps=2300 q=-1.0 Lsize=  281833kB time=00:37:57.56 bitrate=1013.7kbits/s speed=76.7x    
+video:281068kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.272385%
+[libx264 @ 0x55e7a6a7fcc0] frame I:274   Avg QP:17.37  size: 35644
+[libx264 @ 0x55e7a6a7fcc0] frame P:24402 Avg QP:18.96  size:  6959
+[libx264 @ 0x55e7a6a7fcc0] frame B:43654 Avg QP:20.42  size:  2479
+[libx264 @ 0x55e7a6a7fcc0] consecutive B-frames: 11.2%  8.1%  8.3% 72.4%
+[libx264 @ 0x55e7a6a7fcc0] mb I  I16..4:  5.0% 27.0% 68.0%
+[libx264 @ 0x55e7a6a7fcc0] mb P  I16..4:  0.5%  1.4%  1.7%  P16..4: 49.6%  0.0%  0.0%  0.0%  0.0%    skip:46.7%
+[libx264 @ 0x55e7a6a7fcc0] mb B  I16..4:  0.1%  0.1%  0.1%  B16..8: 14.3%  0.0%  0.0%  direct:12.7%  skip:72.7%  L0:36.0% L1:51.6% BI:12.4%
+[libx264 @ 0x55e7a6a7fcc0] 8x8 transform intra:35.0% inter:9.6%
+[libx264 @ 0x55e7a6a7fcc0] coded y,uvDC,uvAC intra: 74.4% 57.1% 17.0% inter: 12.0% 10.5% 0.1%
+[libx264 @ 0x55e7a6a7fcc0] i16 v,h,dc,p: 36% 19% 22% 23%
+[libx264 @ 0x55e7a6a7fcc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 17% 19% 18%  6%  8%  8%  8%  7%  9%
+[libx264 @ 0x55e7a6a7fcc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 22% 17% 15%  8%  8%  8%  7%  7%  7%
+[libx264 @ 0x55e7a6a7fcc0] i8c dc,h,v,p: 43% 22% 26%  8%
+[libx264 @ 0x55e7a6a7fcc0] Weighted P-Frames: Y:0.1% UV:0.0%
+[libx264 @ 0x55e7a6a7fcc0] kb/s:1010.90
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, h264, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(progressive), 640x480, 30 fps, 30 tbr, 1200k tbn, 60 tbc
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.original.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 30 tbr, 1200k tbn, 1200k tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+[mp4 @ 0x55fbe845bd00] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
+frame=    1 fps=0.0 q=-1.0 size=       0kB time=00:00:00.00 bitrate=384000.0kbits/s speed=N/A    frame=57223 fps=0.0 q=-1.0 size=  218624kB time=00:31:47.38 bitrate= 939.0kbits/s speed=3.81e+03x    frame=68167 fps=0.0 q=-1.0 Lsize=  263501kB time=00:37:52.18 bitrate= 950.0kbits/s speed=3.77e+03x    
+video:262790kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.270237%
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.original.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:37:52.22, start: 0.000000, bitrate: 949 kb/s
+  Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 640x480, 947 kb/s, 30 fps, 30 tbr, 1200k tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x55b1a8e8ecc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x55b1a8e8ecc0] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x55b1a8e8ecc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:1.00
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.rec/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.fixed.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame= 1110 fps=0.0 q=21.0 size=    3840kB time=00:00:36.16 bitrate= 869.8kbits/s speed=71.3x    frame= 2214 fps=2198 q=20.0 size=    7680kB time=00:01:12.96 bitrate= 862.2kbits/s speed=72.4x    frame= 3274 fps=2170 q=19.0 size=   11520kB time=00:01:48.30 bitrate= 871.4kbits/s speed=71.8x    frame= 4363 fps=2172 q=20.0 size=   15616kB time=00:02:24.60 bitrate= 884.7kbits/s speed=  72x    frame= 5390 fps=2147 q=21.0 size=   19200kB time=00:02:58.83 bitrate= 879.5kbits/s speed=71.2x    frame= 6613 fps=2197 q=20.0 size=   23552kB time=00:03:39.60 bitrate= 878.6kbits/s speed=  73x    frame= 7759 fps=2210 q=17.0 size=   27648kB time=00:04:17.80 bitrate= 878.6kbits/s speed=73.4x    frame= 8774 fps=2188 q=21.0 size=   31488kB time=00:04:51.63 bitrate= 884.5kbits/s speed=72.7x    frame= 9945 fps=2205 q=19.0 size=   35584kB time=00:05:30.66 bitrate= 881.6kbits/s speed=73.3x    frame=11084 fps=2212 q=20.0 size=   39680kB time=00:06:08.63 bitrate= 881.8kbits/s speed=73.6x    frame=12307 fps=2233 q=21.0 size=   44288kB time=00:06:49.40 bitrate= 886.2kbits/s speed=74.3x    frame=13557 fps=2255 q=21.0 size=   48896kB time=00:07:31.06 bitrate= 888.0kbits/s speed=  75x    frame=14517 fps=2230 q=24.0 size=   52224kB time=00:08:03.06 bitrate= 885.6kbits/s speed=74.2x    frame=15474 fps=2206 q=21.0 size=   55808kB time=00:08:34.96 bitrate= 887.8kbits/s speed=73.4x    frame=16545 fps=2202 q=21.0 size=   59648kB time=00:09:10.66 bitrate= 887.4kbits/s speed=73.3x    frame=17607 fps=2197 q=21.0 size=   63488kB time=00:09:46.06 bitrate= 887.4kbits/s speed=73.1x    frame=18843 fps=2213 q=21.0 size=   68096kB time=00:10:27.26 bitrate= 889.3kbits/s speed=73.7x    frame=20086 fps=2228 q=20.0 size=   72704kB time=00:11:08.70 bitrate= 890.7kbits/s speed=74.2x    frame=21306 fps=2239 q=19.0 size=   77056kB time=00:11:49.36 bitrate= 889.9kbits/s speed=74.6x    frame=22538 fps=2250 q=19.0 size=   81664kB time=00:12:30.43 bitrate= 891.5kbits/s speed=74.9x    frame=23774 fps=2261 q=23.0 size=   86016kB time=00:13:11.63 bitrate= 890.1kbits/s speed=75.3x    frame=24908 fps=2261 q=19.0 size=   90112kB time=00:13:49.43 bitrate= 890.0kbits/s speed=75.3x    frame=25923 fps=2251 q=19.0 size=   93952kB time=00:14:23.26 bitrate= 891.6kbits/s speed=  75x    frame=26942 fps=2242 q=20.0 size=   97536kB time=00:14:57.23 bitrate= 890.5kbits/s speed=74.7x    frame=28065 fps=2242 q=21.0 size=  101888kB time=00:15:34.66 bitrate= 893.0kbits/s speed=74.7x    frame=29204 fps=2243 q=20.0 size=  105984kB time=00:16:12.63 bitrate= 892.7kbits/s speed=74.7x    frame=30332 fps=2244 q=18.0 size=  110080kB time=00:16:50.23 bitrate= 892.6kbits/s speed=74.7x    frame=31412 fps=2241 q=19.0 size=  113920kB time=00:17:26.23 bitrate= 892.0kbits/s speed=74.6x    frame=32408 fps=2232 q=19.0 size=  117760kB time=00:17:59.43 bitrate= 893.7kbits/s speed=74.3x    frame=33419 fps=2225 q=22.0 size=  122112kB time=00:18:33.13 bitrate= 898.7kbits/s speed=74.1x    frame=34505 fps=2223 q=20.0 size=  126720kB time=00:19:09.33 bitrate= 903.2kbits/s speed=74.1x    frame=35595 fps=2222 q=21.0 size=  131328kB time=00:19:45.66 bitrate= 907.4kbits/s speed=  74x    frame=36685 fps=2221 q=23.0 size=  135936kB time=00:20:22.00 bitrate= 911.3kbits/s speed=  74x    frame=37607 fps=2210 q=21.0 size=  139520kB time=00:20:52.73 bitrate= 912.4kbits/s speed=73.6x    frame=38543 fps=2200 q=22.0 size=  143360kB time=00:21:23.93 bitrate= 914.7kbits/s speed=73.3x    frame=39613 fps=2198 q=22.0 size=  147712kB time=00:21:59.60 bitrate= 917.0kbits/s speed=73.2x    frame=40609 fps=2192 q=19.0 size=  151808kB time=00:22:32.80 bitrate= 919.3kbits/s speed=  73x    frame=41740 fps=2194 q=18.0 size=  156416kB time=00:23:10.50 bitrate= 921.5kbits/s speed=73.1x    frame=42816 fps=2193 q=20.0 size=  161024kB time=00:23:46.36 bitrate= 924.8kbits/s speed=73.1x    frame=43898 fps=2192 q=20.0 size=  165376kB time=00:24:22.43 bitrate= 926.4kbits/s speed=  73x    frame=44891 fps=2187 q=19.0 size=  169472kB time=00:24:55.53 bitrate= 928.3kbits/s speed=72.9x    frame=45886 fps=2182 q=19.0 size=  173312kB time=00:25:28.70 bitrate= 928.7kbits/s speed=72.7x    frame=46916 fps=2179 q=22.0 size=  177664kB time=00:26:03.03 bitrate= 931.2kbits/s speed=72.6x    frame=47998 fps=2179 q=20.0 size=  182272kB time=00:26:39.10 bitrate= 933.8kbits/s speed=72.6x    frame=48869 fps=2169 q=19.0 size=  185600kB time=00:27:08.13 bitrate= 933.9kbits/s speed=72.3x    frame=49800 fps=2163 q=22.0 size=  189696kB time=00:27:39.16 bitrate= 936.6kbits/s speed=72.1x    frame=50802 fps=2159 q=18.0 size=  193536kB time=00:28:12.56 bitrate= 936.7kbits/s speed=71.9x    frame=51868 fps=2159 q=19.0 size=  197888kB time=00:28:48.10 bitrate= 938.1kbits/s speed=71.9x    frame=52679 fps=2148 q=19.0 size=  201216kB time=00:29:15.13 bitrate= 939.2kbits/s speed=71.6x    frame=53794 fps=2149 q=20.0 size=  205568kB time=00:29:52.30 bitrate= 939.6kbits/s speed=71.6x    frame=54893 fps=2150 q=21.0 size=  209920kB time=00:30:28.93 bitrate= 940.3kbits/s speed=71.6x    frame=55997 fps=2151 q=21.0 size=  214528kB time=00:31:05.73 bitrate= 941.9kbits/s speed=71.7x    frame=57178 fps=2155 q=22.0 size=  219136kB time=00:31:45.10 bitrate= 942.3kbits/s speed=71.8x    frame=58405 fps=2161 q=19.0 size=  224256kB time=00:32:26.00 bitrate= 944.0kbits/s speed=  72x    frame=59464 fps=2160 q=20.0 size=  228608kB time=00:33:01.30 bitrate= 945.2kbits/s speed=  72x    frame=60616 fps=2163 q=22.0 size=  233216kB time=00:33:39.70 bitrate= 945.9kbits/s speed=72.1x    frame=61835 fps=2167 q=22.0 size=  238080kB time=00:34:20.33 bitrate= 946.6kbits/s speed=72.2x    frame=62896 fps=2167 q=21.0 size=  242176kB time=00:34:55.70 bitrate= 946.7kbits/s speed=72.2x    frame=63854 fps=2162 q=21.0 size=  246016kB time=00:35:27.63 bitrate= 947.2kbits/s speed=72.1x    frame=64952 fps=2163 q=20.0 size=  250368kB time=00:36:04.23 bitrate= 947.7kbits/s speed=72.1x    frame=66071 fps=2164 q=19.0 size=  254720kB time=00:36:41.53 bitrate= 947.8kbits/s speed=72.1x    frame=67155 fps=2164 q=20.0 size=  259072kB time=00:37:17.66 bitrate= 948.5kbits/s speed=72.1x    frame=68167 fps=2164 q=-1.0 Lsize=  263965kB time=00:37:52.13 bitrate= 951.7kbits/s speed=72.1x    
+video:263190kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.294607%
+[libx264 @ 0x55b1a8e8ecc0] frame I:273   Avg QP:15.95  size: 36559
+[libx264 @ 0x55b1a8e8ecc0] frame P:22656 Avg QP:17.36  size:  6784
+[libx264 @ 0x55b1a8e8ecc0] frame B:45238 Avg QP:18.61  size:  2339
+[libx264 @ 0x55b1a8e8ecc0] consecutive B-frames:  9.8%  4.0%  3.8% 82.4%
+[libx264 @ 0x55b1a8e8ecc0] mb I  I16..4:  5.5% 26.2% 68.3%
+[libx264 @ 0x55b1a8e8ecc0] mb P  I16..4:  0.6%  1.2%  0.6%  P16..4: 52.4%  0.0%  0.0%  0.0%  0.0%    skip:45.3%
+[libx264 @ 0x55b1a8e8ecc0] mb B  I16..4:  0.1%  0.1%  0.0%  B16..8: 13.8%  0.0%  0.0%  direct:15.7%  skip:70.3%  L0:38.6% L1:56.7% BI: 4.7%
+[libx264 @ 0x55b1a8e8ecc0] 8x8 transform intra:40.4% inter:9.5%
+[libx264 @ 0x55b1a8e8ecc0] coded y,uvDC,uvAC intra: 63.4% 55.6% 16.6% inter: 12.0% 12.7% 0.1%
+[libx264 @ 0x55b1a8e8ecc0] i16 v,h,dc,p: 27% 21% 32% 21%
+[libx264 @ 0x55b1a8e8ecc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 23% 23%  6%  7%  6%  7%  5%  8%
+[libx264 @ 0x55b1a8e8ecc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 18% 16%  8%  7%  7%  5%  7%  6%
+[libx264 @ 0x55b1a8e8ecc0] i8c dc,h,v,p: 49% 20% 23%  7%
+[libx264 @ 0x55b1a8e8ecc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x55b1a8e8ecc0] kb/s:948.87
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, h264, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(progressive), 640x480, 30 fps, 30 tbr, 1200k tbn, 60 tbc
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.original.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 30 tbr, 1200k tbn, 1200k tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+[mp4 @ 0x55f41b66f340] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
+frame=    1 fps=0.0 q=-1.0 size=       0kB time=00:00:00.00 bitrate=384000.0kbits/s speed=N/A    frame= 3464 fps=0.0 q=-1.0 size=   14848kB time=00:01:55.44 bitrate=1053.7kbits/s speed= 230x    frame=21196 fps=21171 q=-1.0 size=   90368kB time=00:11:46.50 bitrate=1047.8kbits/s speed= 706x    frame=68258 fps=47546 q=-1.0 Lsize=  269381kB time=00:37:55.21 bitrate= 969.9kbits/s speed=1.58e+03x    
+video:268670kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.264766%
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.original.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:37:55.25, start: 0.000000, bitrate: 969 kb/s
+  Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 640x480, 967 kb/s, 30 fps, 30 tbr, 1200k tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x562e3543ebc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x562e3543ebc0] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x562e3543ebc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:1.00
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.fixed.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  821 fps=0.0 q=21.0 size=    3328kB time=00:00:26.53 bitrate=1027.5kbits/s speed=52.3x    frame= 1775 fps=1762 q=22.0 size=    7168kB time=00:00:58.33 bitrate=1006.6kbits/s speed=57.9x    frame= 2701 fps=1792 q=20.0 size=   11008kB time=00:01:29.20 bitrate=1011.0kbits/s speed=59.2x    frame= 3727 fps=1856 q=20.0 size=   15360kB time=00:02:03.40 bitrate=1019.7kbits/s speed=61.5x    frame= 4783 fps=1907 q=23.0 size=   19968kB time=00:02:38.60 bitrate=1031.4kbits/s speed=63.2x    frame= 5871 fps=1951 q=22.0 size=   24320kB time=00:03:14.86 bitrate=1022.4kbits/s speed=64.8x    frame= 6823 fps=1945 q=22.0 size=   28416kB time=00:03:46.60 bitrate=1027.3kbits/s speed=64.6x    frame= 7934 fps=1979 q=20.0 size=   33024kB time=00:04:23.63 bitrate=1026.2kbits/s speed=65.8x    frame= 8964 fps=1988 q=23.0 size=   37120kB time=00:04:57.96 bitrate=1020.5kbits/s speed=66.1x    frame= 9933 fps=1983 q=23.0 size=   41216kB time=00:05:30.26 bitrate=1022.3kbits/s speed=65.9x    frame=10912 fps=1981 q=22.0 size=   45056kB time=00:06:02.90 bitrate=1017.1kbits/s speed=65.9x    frame=11828 fps=1968 q=22.0 size=   48896kB time=00:06:33.43 bitrate=1018.1kbits/s speed=65.5x    frame=12878 fps=1978 q=22.0 size=   52992kB time=00:07:08.43 bitrate=1013.3kbits/s speed=65.8x    frame=14098 fps=2011 q=23.0 size=   58112kB time=00:07:49.10 bitrate=1014.8kbits/s speed=66.9x    frame=15316 fps=2039 q=22.0 size=   62976kB time=00:08:29.70 bitrate=1012.2kbits/s speed=67.9x    frame=16540 fps=2065 q=23.0 size=   68096kB time=00:09:10.50 bitrate=1013.3kbits/s speed=68.7x    frame=17774 fps=2088 q=22.0 size=   73216kB time=00:09:51.63 bitrate=1013.8kbits/s speed=69.5x    frame=18998 fps=2108 q=23.0 size=   78080kB time=00:10:32.43 bitrate=1011.4kbits/s speed=70.2x    frame=20248 fps=2129 q=21.0 size=   83200kB time=00:11:14.10 bitrate=1011.1kbits/s speed=70.9x    frame=21479 fps=2145 q=23.0 size=   88320kB time=00:11:55.13 bitrate=1011.7kbits/s speed=71.4x    frame=22697 fps=2159 q=20.0 size=   93440kB time=00:12:35.73 bitrate=1012.9kbits/s speed=71.9x    frame=23899 fps=2170 q=21.0 size=   98304kB time=00:13:15.80 bitrate=1011.9kbits/s speed=72.3x    frame=25037 fps=2175 q=21.0 size=  102656kB time=00:13:53.73 bitrate=1008.7kbits/s speed=72.4x    frame=26138 fps=2176 q=18.0 size=  107264kB time=00:14:30.43 bitrate=1009.5kbits/s speed=72.5x    frame=27300 fps=2182 q=22.0 size=  111872kB time=00:15:09.16 bitrate=1008.0kbits/s speed=72.7x    frame=28473 fps=2188 q=23.0 size=  116736kB time=00:15:48.26 bitrate=1008.5kbits/s speed=72.9x    frame=29658 fps=2195 q=21.0 size=  121344kB time=00:16:27.76 bitrate=1006.4kbits/s speed=73.1x    frame=30866 fps=2203 q=21.0 size=  126464kB time=00:17:08.03 bitrate=1007.7kbits/s speed=73.4x    frame=32092 fps=2211 q=20.0 size=  131328kB time=00:17:48.90 bitrate=1006.5kbits/s speed=73.6x    frame=33158 fps=2208 q=18.0 size=  136192kB time=00:18:24.43 bitrate=1010.2kbits/s speed=73.6x    frame=34342 fps=2214 q=21.0 size=  140800kB time=00:19:03.90 bitrate=1008.3kbits/s speed=73.7x    frame=35528 fps=2218 q=22.0 size=  145152kB time=00:19:43.43 bitrate=1004.8kbits/s speed=73.9x    frame=36761 fps=2226 q=24.0 size=  149760kB time=00:20:24.53 bitrate=1001.9kbits/s speed=74.1x    frame=37972 fps=2232 q=20.0 size=  154112kB time=00:21:04.90 bitrate= 998.1kbits/s speed=74.3x    frame=39176 fps=2237 q=21.0 size=  158208kB time=00:21:45.03 bitrate= 993.1kbits/s speed=74.5x    frame=40362 fps=2240 q=20.0 size=  162304kB time=00:22:24.56 bitrate= 988.9kbits/s speed=74.6x    frame=41587 fps=2246 q=22.0 size=  166656kB time=00:23:05.40 bitrate= 985.5kbits/s speed=74.8x    frame=42841 fps=2253 q=21.0 size=  171008kB time=00:23:47.20 bitrate= 981.6kbits/s speed=75.1x    frame=44093 fps=2259 q=21.0 size=  175360kB time=00:24:28.93 bitrate= 978.0kbits/s speed=75.3x    frame=45164 fps=2256 q=20.0 size=  179200kB time=00:25:04.63 bitrate= 975.7kbits/s speed=75.2x    frame=46123 fps=2248 q=19.0 size=  182528kB time=00:25:36.60 bitrate= 973.1kbits/s speed=74.9x    frame=47245 fps=2248 q=21.0 size=  186368kB time=00:26:14.00 bitrate= 970.0kbits/s speed=74.9x    frame=48355 fps=2247 q=19.0 size=  190208kB time=00:26:51.00 bitrate= 967.2kbits/s speed=74.9x    frame=49374 fps=2242 q=21.0 size=  194048kB time=00:27:24.96 bitrate= 966.4kbits/s speed=74.7x    frame=50347 fps=2236 q=20.0 size=  197376kB time=00:27:57.40 bitrate= 963.9kbits/s speed=74.5x    frame=51243 fps=2226 q=18.0 size=  200704kB time=00:28:27.26 bitrate= 963.0kbits/s speed=74.2x    frame=52362 fps=2226 q=21.0 size=  204544kB time=00:29:04.56 bitrate= 960.5kbits/s speed=74.2x    frame=53412 fps=2223 q=19.0 size=  208128kB time=00:29:39.56 bitrate= 958.1kbits/s speed=74.1x    frame=54339 fps=2216 q=16.0 size=  211456kB time=00:30:10.46 bitrate= 956.8kbits/s speed=73.8x    frame=55300 fps=2210 q=18.0 size=  215040kB time=00:30:42.50 bitrate= 956.1kbits/s speed=73.6x    frame=56307 fps=2206 q=17.0 size=  218624kB time=00:31:16.06 bitrate= 954.6kbits/s speed=73.5x    frame=57404 fps=2206 q=19.0 size=  222464kB time=00:31:52.63 bitrate= 952.8kbits/s speed=73.5x    frame=58535 fps=2207 q=21.0 size=  226560kB time=00:32:30.33 bitrate= 951.6kbits/s speed=73.5x    frame=59675 fps=2208 q=21.0 size=  230400kB time=00:33:08.33 bitrate= 949.3kbits/s speed=73.6x    frame=60722 fps=2206 q=20.0 size=  234240kB time=00:33:43.23 bitrate= 948.4kbits/s speed=73.5x    frame=61906 fps=2209 q=21.0 size=  238080kB time=00:34:22.70 bitrate= 945.5kbits/s speed=73.6x    frame=63106 fps=2212 q=18.0 size=  242432kB time=00:35:02.70 bitrate= 944.5kbits/s speed=73.7x    frame=64234 fps=2213 q=21.0 size=  246528kB time=00:35:40.30 bitrate= 943.6kbits/s speed=73.7x    frame=65407 fps=2215 q=22.0 size=  250624kB time=00:36:19.40 bitrate= 942.1kbits/s speed=73.8x    frame=66624 fps=2219 q=21.0 size=  254976kB time=00:36:59.96 bitrate= 940.9kbits/s speed=73.9x    frame=67779 fps=2220 q=19.0 size=  259072kB time=00:37:38.46 bitrate= 939.7kbits/s speed=  74x    frame=68258 fps=2219 q=-1.0 Lsize=  261763kB time=00:37:55.16 bitrate= 942.5kbits/s speed=  74x    
+video:260986kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.297604%
+[libx264 @ 0x562e3543ebc0] frame I:274   Avg QP:16.53  size: 34259
+[libx264 @ 0x562e3543ebc0] frame P:22423 Avg QP:18.21  size:  6787
+[libx264 @ 0x562e3543ebc0] frame B:45561 Avg QP:19.68  size:  2319
+[libx264 @ 0x562e3543ebc0] consecutive B-frames:  8.0%  6.7%  6.6% 78.7%
+[libx264 @ 0x562e3543ebc0] mb I  I16..4:  5.5% 26.9% 67.6%
+[libx264 @ 0x562e3543ebc0] mb P  I16..4:  0.6%  1.2%  1.1%  P16..4: 50.6%  0.0%  0.0%  0.0%  0.0%    skip:46.5%
+[libx264 @ 0x562e3543ebc0] mb B  I16..4:  0.1%  0.1%  0.1%  B16..8: 14.1%  0.0%  0.0%  direct:13.1%  skip:72.7%  L0:36.6% L1:53.4% BI:10.0%
+[libx264 @ 0x562e3543ebc0] 8x8 transform intra:37.1% inter:9.1%
+[libx264 @ 0x562e3543ebc0] coded y,uvDC,uvAC intra: 68.7% 53.9% 15.7% inter: 11.3% 10.8% 0.1%
+[libx264 @ 0x562e3543ebc0] i16 v,h,dc,p: 29% 21% 29% 20%
+[libx264 @ 0x562e3543ebc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 16% 21% 19%  6%  7%  7%  7%  6%  9%
+[libx264 @ 0x562e3543ebc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 24% 18% 15%  8%  7%  8%  6%  7%  7%
+[libx264 @ 0x562e3543ebc0] i8c dc,h,v,p: 46% 22% 24%  8%
+[libx264 @ 0x562e3543ebc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x562e3543ebc0] kb/s:939.67
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, h264, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.h264':
+  Duration: N/A, bitrate: N/A
+  Stream #0:0: Video: h264 (Constrained Baseline), yuv420p(progressive), 640x480, 30 fps, 30 tbr, 1200k tbn, 60 tbc
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.original.mp4':
+  Metadata:
+    encoder         : Lavf58.76.100
+  Stream #0:0: Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 30 tbr, 1200k tbn, 1200k tbc
+Stream mapping:
+  Stream #0:0 -> #0:0 (copy)
+Press [q] to stop, [?] for help
+[mp4 @ 0x559544d3fd00] Timestamps are unset in a packet for stream 0. This is deprecated and will stop working in the future. Fix your code to set the timestamps properly
+frame=    1 fps=0.0 q=-1.0 size=       0kB time=00:00:00.00 bitrate=384000.0kbits/s speed=N/A    frame=26234 fps=0.0 q=-1.0 size=   92672kB time=00:14:34.44 bitrate= 868.2kbits/s speed=1.75e+03x    frame=68213 fps=0.0 q=-1.0 Lsize=  255167kB time=00:37:53.72 bitrate= 919.3kbits/s speed=2.54e+03x    
+video:254457kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.279179%
+ffmpeg version 4.4.2 Copyright (c) 2000-2021 the FFmpeg developers
+  built with gcc 11.3.0 (conda-forge gcc 11.3.0-19)
+  configuration: --prefix=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_plac --cc=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-cc --cxx=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-c++ --nm=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-nm --ar=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/x86_64-conda-linux-gnu-ar --disable-doc --disable-openssl --enable-avresample --enable-demuxer=dash --enable-hardcoded-tables --enable-libfreetype --enable-libfontconfig --enable-libopenh264 --enable-gnutls --enable-libmp3lame --enable-libvpx --enable-pthreads --enable-vaapi --enable-gpl --enable-libx264 --enable-libx265 --enable-libaom --enable-libsvtav1 --enable-libxml2 --enable-pic --enable-shared --disable-static --enable-version3 --enable-zlib --pkg-config=/home/conda/feedstock_root/build_artifacts/ffmpeg_1671040255947/_build_env/bin/pkg-config
+  libavutil      56. 70.100 / 56. 70.100
+  libavcodec     58.134.100 / 58.134.100
+  libavformat    58. 76.100 / 58. 76.100
+  libavdevice    58. 13.100 / 58. 13.100
+  libavfilter     7.110.100 /  7.110.100
+  libavresample   4.  0.  0 /  4.  0.  0
+  libswscale      5.  9.100 /  5.  9.100
+  libswresample   3.  9.100 /  3.  9.100
+  libpostproc    55.  9.100 / 55.  9.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.original.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Duration: 00:37:53.76, start: 0.000000, bitrate: 919 kb/s
+  Stream #0:0(und): Video: h264 (Constrained Baseline) (avc1 / 0x31637661), yuv420p, 640x480, 916 kb/s, 30 fps, 120 tbr, 1200k tbn, 60 tbc (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> h264 (libx264))
+Press [q] to stop, [?] for help
+[libx264 @ 0x5582fe8f9cc0] using cpu capabilities: MMX2 SSE2Fast SSSE3 SSE4.2 AVX FMA3 BMI2 AVX2
+[libx264 @ 0x5582fe8f9cc0] profile High, level 3.0, 4:2:0, 8-bit
+[libx264 @ 0x5582fe8f9cc0] 264 - core 164 r3095 baee400 - H.264/MPEG-4 AVC codec - Copyleft 2003-2022 - http://www.videolan.org/x264.html - options: cabac=1 ref=1 deblock=1:0:0 analyse=0x3:0x3 me=dia subme=1 psy=1 psy_rd=1.00:0.00 mixed_ref=0 me_range=16 chroma_me=1 trellis=0 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=0 threads=15 lookahead_threads=2 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=3 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=1 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc=crf mbtree=0 crf=23.0 qcomp=0.60 qpmin=0 qpmax=69 qpstep=4 ip_ratio=1.40 pb_ratio=1.30 aq=1:1.00
+Output #0, mp4, to '/nancy/projects/reward_competition_extention/data/2023_06_12/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.rec/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.fixed.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.76.100
+  Stream #0:0(und): Video: h264 (avc1 / 0x31637661), yuv420p(progressive), 640x480, q=2-31, 30 fps, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      vendor_id       : [0][0][0][0]
+      encoder         : Lavc58.134.100 libx264
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/0 buffer size: 0 vbv_delay: N/A
+frame=    1 fps=0.0 q=0.0 size=       0kB time=00:00:00.00 bitrate=N/A speed=   0x    frame=  967 fps=0.0 q=18.0 size=    3328kB time=00:00:31.40 bitrate= 868.3kbits/s dup=1 drop=0 speed=61.9x    frame= 2139 fps=2124 q=18.0 size=    7424kB time=00:01:10.46 bitrate= 863.1kbits/s dup=1 drop=0 speed=  70x    frame= 3200 fps=2122 q=19.0 size=   11264kB time=00:01:45.83 bitrate= 871.9kbits/s dup=1 drop=0 speed=70.2x    frame= 4256 fps=2119 q=20.0 size=   15104kB time=00:02:21.03 bitrate= 877.3kbits/s dup=1 drop=0 speed=70.2x    frame= 5473 fps=2182 q=19.0 size=   19200kB time=00:03:01.60 bitrate= 866.1kbits/s dup=1 drop=0 speed=72.4x    frame= 6607 fps=2196 q=21.0 size=   23296kB time=00:03:39.40 bitrate= 869.8kbits/s dup=1 drop=0 speed=72.9x    frame= 7818 fps=2228 q=21.0 size=   27648kB time=00:04:19.76 bitrate= 871.9kbits/s dup=1 drop=0 speed=  74x    frame= 9035 fps=2254 q=20.0 size=   32000kB time=00:05:00.33 bitrate= 872.8kbits/s dup=1 drop=0 speed=74.9x    frame=10308 fps=2286 q=21.0 size=   36352kB time=00:05:42.76 bitrate= 868.8kbits/s dup=1 drop=0 speed=  76x    frame=11422 fps=2280 q=20.0 size=   40192kB time=00:06:19.90 bitrate= 866.7kbits/s dup=1 drop=0 speed=75.8x    frame=12385 fps=2248 q=19.0 size=   43520kB time=00:06:52.00 bitrate= 865.3kbits/s dup=1 drop=0 speed=74.8x    frame=13482 fps=2243 q=19.0 size=   47360kB time=00:07:28.56 bitrate= 864.9kbits/s dup=1 drop=0 speed=74.6x    frame=14554 fps=2235 q=21.0 size=   51200kB time=00:08:04.30 bitrate= 866.1kbits/s dup=1 drop=0 speed=74.4x    frame=15580 fps=2222 q=21.0 size=   54784kB time=00:08:38.50 bitrate= 865.6kbits/s dup=1 drop=0 speed=  74x    frame=16595 fps=2209 q=20.0 size=   58368kB time=00:09:12.33 bitrate= 865.7kbits/s dup=1 drop=0 speed=73.5x    frame=17414 fps=2174 q=20.0 size=   61184kB time=00:09:39.63 bitrate= 864.7kbits/s dup=1 drop=0 speed=72.3x    frame=18509 fps=2175 q=17.0 size=   65024kB time=00:10:16.13 bitrate= 864.5kbits/s dup=1 drop=0 speed=72.4x    frame=19420 fps=2155 q=20.0 size=   68352kB time=00:10:46.50 bitrate= 866.1kbits/s dup=1 drop=0 speed=71.7x    frame=20281 fps=2132 q=20.0 size=   71168kB time=00:11:15.20 bitrate= 863.5kbits/s dup=1 drop=0 speed=  71x    frame=21277 fps=2125 q=21.0 size=   74752kB time=00:11:48.40 bitrate= 864.4kbits/s dup=1 drop=0 speed=70.8x    frame=22315 fps=2123 q=21.0 size=   78336kB time=00:12:23.00 bitrate= 863.7kbits/s dup=1 drop=0 speed=70.7x    frame=23452 fps=2130 q=21.0 size=   82432kB time=00:13:00.90 bitrate= 864.7kbits/s dup=1 drop=0 speed=70.9x    frame=24594 fps=2136 q=21.0 size=   86272kB time=00:13:38.96 bitrate= 863.0kbits/s dup=1 drop=0 speed=71.1x    frame=25247 fps=2102 q=19.0 size=   88576kB time=00:14:00.73 bitrate= 863.1kbits/s dup=1 drop=0 speed=  70x    frame=26005 fps=2078 q=21.0 size=   91136kB time=00:14:26.00 bitrate= 862.1kbits/s dup=1 drop=0 speed=69.2x    frame=26979 fps=2073 q=17.0 size=   94720kB time=00:14:58.46 bitrate= 863.6kbits/s dup=1 drop=0 speed=  69x    frame=28104 fps=2080 q=20.0 size=   98560kB time=00:15:35.96 bitrate= 862.6kbits/s dup=1 drop=0 speed=69.3x    frame=28644 fps=2044 q=19.0 size=  100352kB time=00:15:53.96 bitrate= 861.8kbits/s dup=1 drop=0 speed=68.1x    frame=29460 fps=2030 q=21.0 size=  103424kB time=00:16:21.16 bitrate= 863.5kbits/s dup=1 drop=0 speed=67.6x    frame=30541 fps=2034 q=18.0 size=  107008kB time=00:16:57.20 bitrate= 861.8kbits/s dup=1 drop=0 speed=67.7x    frame=31652 fps=2040 q=21.0 size=  111104kB time=00:17:34.23 bitrate= 863.3kbits/s dup=1 drop=0 speed=67.9x    frame=32722 fps=2043 q=22.0 size=  114944kB time=00:18:09.90 bitrate= 864.0kbits/s dup=1 drop=0 speed=  68x    frame=33878 fps=2051 q=21.0 size=  120064kB time=00:18:48.43 bitrate= 871.6kbits/s dup=1 drop=0 speed=68.3x    frame=35106 fps=2063 q=18.0 size=  124928kB time=00:19:29.36 bitrate= 875.2kbits/s dup=1 drop=0 speed=68.7x    frame=36290 fps=2072 q=23.0 size=  129536kB time=00:20:08.83 bitrate= 877.8kbits/s dup=1 drop=0 speed=  69x    frame=37525 fps=2083 q=20.0 size=  134144kB time=00:20:50.00 bitrate= 879.1kbits/s dup=1 drop=0 speed=69.4x    frame=38548 fps=2082 q=21.0 size=  138240kB time=00:21:24.10 bitrate= 881.9kbits/s dup=1 drop=0 speed=69.3x    frame=39512 fps=2077 q=26.0 size=  141824kB time=00:21:56.23 bitrate= 882.7kbits/s dup=1 drop=0 speed=69.2x    frame=40592 fps=2080 q=22.0 size=  145920kB time=00:22:32.23 bitrate= 884.0kbits/s dup=1 drop=0 speed=69.3x    frame=41674 fps=2082 q=23.0 size=  150272kB time=00:23:08.30 bitrate= 886.7kbits/s dup=1 drop=0 speed=69.3x    frame=42758 fps=2084 q=21.0 size=  154112kB time=00:23:44.43 bitrate= 886.3kbits/s dup=1 drop=0 speed=69.4x    frame=43721 fps=2080 q=22.0 size=  157952kB time=00:24:16.53 bitrate= 888.4kbits/s dup=1 drop=0 speed=69.3x    frame=44708 fps=2077 q=20.0 size=  161536kB time=00:24:49.43 bitrate= 888.5kbits/s dup=1 drop=0 speed=69.2x    frame=45853 fps=2082 q=21.0 size=  165632kB time=00:25:27.60 bitrate= 888.2kbits/s dup=1 drop=0 speed=69.4x    frame=47095 fps=2091 q=19.0 size=  170240kB time=00:26:09.00 bitrate= 888.9kbits/s dup=1 drop=0 speed=69.7x    frame=48330 fps=2099 q=19.0 size=  174848kB time=00:26:50.16 bitrate= 889.6kbits/s dup=1 drop=0 speed=69.9x    frame=49516 fps=2105 q=25.0 size=  179200kB time=00:27:29.70 bitrate= 889.9kbits/s dup=1 drop=0 speed=70.1x    frame=50737 fps=2112 q=19.0 size=  183808kB time=00:28:10.40 bitrate= 890.8kbits/s dup=1 drop=0 speed=70.4x    frame=51976 fps=2120 q=19.0 size=  188672kB time=00:28:51.70 bitrate= 892.5kbits/s dup=1 drop=0 speed=70.6x    frame=53211 fps=2126 q=19.0 size=  193280kB time=00:29:32.86 bitrate= 893.1kbits/s dup=1 drop=0 speed=70.8x    frame=54458 fps=2134 q=18.0 size=  197888kB time=00:30:14.43 bitrate= 893.4kbits/s dup=1 drop=0 speed=71.1x    frame=55702 fps=2140 q=21.0 size=  202752kB time=00:30:55.90 bitrate= 895.0kbits/s dup=1 drop=0 speed=71.3x    frame=56920 fps=2146 q=19.0 size=  207360kB time=00:31:36.50 bitrate= 895.7kbits/s dup=1 drop=0 speed=71.5x    frame=58132 fps=2151 q=22.0 size=  212224kB time=00:32:16.90 bitrate= 897.6kbits/s dup=1 drop=0 speed=71.7x    frame=59330 fps=2156 q=21.0 size=  216832kB time=00:32:56.83 bitrate= 898.6kbits/s dup=1 drop=0 speed=71.8x    frame=60559 fps=2161 q=21.0 size=  221440kB time=00:33:37.80 bitrate= 899.0kbits/s dup=1 drop=0 speed=  72x    frame=61722 fps=2164 q=21.0 size=  225792kB time=00:34:16.56 bitrate= 899.4kbits/s dup=1 drop=0 speed=72.1x    frame=62962 fps=2169 q=19.0 size=  230400kB time=00:34:57.90 bitrate= 899.7kbits/s dup=1 drop=0 speed=72.3x    frame=64192 fps=2174 q=18.0 size=  234752kB time=00:35:38.90 bitrate= 899.1kbits/s dup=1 drop=0 speed=72.4x    frame=65422 fps=2179 q=21.0 size=  239360kB time=00:36:19.90 bitrate= 899.5kbits/s dup=1 drop=0 speed=72.6x    frame=66579 fps=2181 q=21.0 size=  243712kB time=00:36:58.46 bitrate= 899.9kbits/s dup=1 drop=0 speed=72.7x    frame=67797 fps=2185 q=21.0 size=  248320kB time=00:37:39.06 bitrate= 900.5kbits/s dup=1 drop=0 speed=72.8x    frame=68214 fps=2186 q=-1.0 Lsize=  250903kB time=00:37:53.70 bitrate= 904.0kbits/s dup=1 drop=0 speed=72.9x    
+video:250116kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: 0.314739%
+[libx264 @ 0x5582fe8f9cc0] frame I:273   Avg QP:16.01  size: 35814
+[libx264 @ 0x5582fe8f9cc0] frame P:20624 Avg QP:17.50  size:  6863
+[libx264 @ 0x5582fe8f9cc0] frame B:47317 Avg QP:18.67  size:  2215
+[libx264 @ 0x5582fe8f9cc0] consecutive B-frames:  6.0%  3.3%  3.6% 87.1%
+[libx264 @ 0x5582fe8f9cc0] mb I  I16..4:  5.8% 25.4% 68.9%
+[libx264 @ 0x5582fe8f9cc0] mb P  I16..4:  0.5%  1.0%  0.5%  P16..4: 52.6%  0.0%  0.0%  0.0%  0.0%    skip:45.3%
+[libx264 @ 0x5582fe8f9cc0] mb B  I16..4:  0.1%  0.0%  0.0%  B16..8: 13.1%  0.0%  0.0%  direct:15.3%  skip:71.5%  L0:37.8% L1:57.5% BI: 4.7%
+[libx264 @ 0x5582fe8f9cc0] 8x8 transform intra:39.4% inter:9.5%
+[libx264 @ 0x5582fe8f9cc0] coded y,uvDC,uvAC intra: 65.4% 51.6% 15.9% inter: 11.3% 12.3% 0.1%
+[libx264 @ 0x5582fe8f9cc0] i16 v,h,dc,p: 29% 24% 25% 23%
+[libx264 @ 0x5582fe8f9cc0] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 15% 25% 21%  5%  7%  6%  7%  5%  9%
+[libx264 @ 0x5582fe8f9cc0] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 26% 18% 15%  8%  7%  8%  5%  7%  6%
+[libx264 @ 0x5582fe8f9cc0] i8c dc,h,v,p: 49% 20% 24%  7%
+[libx264 @ 0x5582fe8f9cc0] Weighted P-Frames: Y:0.0% UV:0.0%
+[libx264 @ 0x5582fe8f9cc0] kb/s:901.11
