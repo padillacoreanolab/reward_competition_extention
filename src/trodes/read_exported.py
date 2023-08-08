@@ -114,7 +114,7 @@ def read_trodes_extracted_data_file(filename):
         fields_text.update({'data': data})
         return fields_text
     
-def organize_single_trodes_export(dir_path):
+def organize_single_trodes_export(dir_path, skip_raw_group0=True):
     """
     Organizes Trodes data files in a given directory. The data is stored in a dictionary. 
     The key is the penultimate (second to last) part of the file name (i.e., the part before the last dot in the file name). 
@@ -122,7 +122,7 @@ def organize_single_trodes_export(dir_path):
 
     Args:
         dir_path (str): The path to the directory containing the Trodes files.
-
+        skip_raw_group0(bool): To skip the "raw_group0" file which contains the raw signal which uses a lot of memory
     Returns:
         dict: A dictionary with organized Trodes file data.
     """
@@ -131,6 +131,9 @@ def organize_single_trodes_export(dir_path):
     
     # Iterate over all files in the directory
     for file_name in os.listdir(dir_path):
+
+        if skip_raw_group0 and "raw_group0" in file_name:
+            continue
         # Attempt to parse each file and store the data in the dictionary
         try:
             # Extract second to last part of the file name
