@@ -9,6 +9,7 @@ ipynb_checkpoints/
 .ipynb_checkpoints/
 *env/
 models/
+temp/
 
 # Data Files
 *.mp4
