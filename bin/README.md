@@ -5,6 +5,8 @@
 # https://github.com/SpikeInterface/spikeinterface 
 conda create -n spike_interface_0_97_1 python=3.9 --yes
 conda activate spike_interface_0_97_1
+# Pandas
+conda install -c conda-forge pandas
 
 # Installing Spikeinterface
 pip install spikeinterface[full,widgets]==0.97.1
@@ -41,7 +43,9 @@ conda install -c conda-forge moviepy -y
 conda install flake8 -y
 pip install jupyterlab_flake8
 
-
+# GPFA
+conda install -c conda-forge tqdm --yes
+pip install elephant
 ```
 
 # SLEAP Environment
