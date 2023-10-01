@@ -1,0 +1,1856 @@
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-21 18:50:09.867946
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.7 FPS
+Finished inference at: 2023-08-21 19:04:19.556815
+Total runtime: 849.6888842582703 secs
+Predicted frames: 33938/33938
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 849.6888842582703,
+│   'start_timestamp': '2023-08-21 18:50:09.867946',
+│   'finish_timestamp': '2023-08-21 19:04:19.556815'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-21 19:04:23.865538
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.6 FPS
+Finished inference at: 2023-08-21 19:18:12.252544
+Total runtime: 828.3870208263397 secs
+Predicted frames: 33938/33938
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 828.3870208263397,
+│   'start_timestamp': '2023-08-21 19:04:23.865538',
+│   'finish_timestamp': '2023-08-21 19:18:12.252544'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_161341_omission_subject_6_1_and_6_3/20221122_161341_omission_subject_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-21 19:18:21.701777
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.8 FPS
+Finished inference at: 2023-08-21 19:37:34.201876
+Total runtime: 1152.500113248825 secs
+Predicted frames: 46997/46997
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1152.500113248825,
+│   'start_timestamp': '2023-08-21 19:18:21.701777',
+│   'finish_timestamp': '2023-08-21 19:37:34.201876'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-21 19:37:38.476068
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 40.7 FPS
+Finished inference at: 2023-08-21 19:56:26.738987
+Total runtime: 1128.2629368305206 secs
+Predicted frames: 46997/46997
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1128.2629368305206,
+│   'start_timestamp': '2023-08-21 19:37:38.476068',
+│   'finish_timestamp': '2023-08-21 19:56:26.738987'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221122_164720_competition_6_1_and_6_3/20221122_164720_competition_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4...
+Started inference at: 2023-08-21 19:56:44.262614
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 47.6 FPS
+Finished inference at: 2023-08-21 20:06:36.147593
+Total runtime: 591.8849947452545 secs
+Predicted frames: 25507/25507
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 591.8849947452545,
+│   'start_timestamp': '2023-08-21 19:56:44.262614',
+│   'finish_timestamp': '2023-08-21 20:06:36.147593'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4...
+Started inference at: 2023-08-21 20:06:40.251789
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 47.5 FPS
+Finished inference at: 2023-08-21 20:16:26.597260
+Total runtime: 586.3454852104187 secs
+Predicted frames: 25507/25507
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 586.3454852104187,
+│   'start_timestamp': '2023-08-21 20:06:40.251789',
+│   'finish_timestamp': '2023-08-21 20:16:26.597260'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_113957_omission_subject_6_1_and_6_4/20221123_113957_omission_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4...
+Started inference at: 2023-08-21 20:16:31.424277
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.1 FPS
+Finished inference at: 2023-08-21 20:32:27.612650
+Total runtime: 956.1883873939514 secs
+Predicted frames: 37860/37860
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 956.1883873939514,
+│   'start_timestamp': '2023-08-21 20:16:31.424277',
+│   'finish_timestamp': '2023-08-21 20:32:27.612650'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4...
+Started inference at: 2023-08-21 20:32:31.841934
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.7 FPS
+Finished inference at: 2023-08-21 20:48:02.218692
+Total runtime: 930.3767738342285 secs
+Predicted frames: 37860/37860
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 930.3767738342285,
+│   'start_timestamp': '2023-08-21 20:32:31.841934',
+│   'finish_timestamp': '2023-08-21 20:48:02.218692'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221123_122652_competition_subject_6_1_and_6_4/20221123_122652_competition_subject_6_1_and_6_4.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 20:48:21.500323
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 47.6 FPS
+Finished inference at: 2023-08-21 20:58:04.870613
+Total runtime: 583.3703038692474 secs
+Predicted frames: 25335/25335
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 583.3703038692474,
+│   'start_timestamp': '2023-08-21 20:48:21.500323',
+│   'finish_timestamp': '2023-08-21 20:58:04.870613'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 20:58:08.996592
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 47.8 FPS
+Finished inference at: 2023-08-21 21:07:45.838980
+Total runtime: 576.8424036502838 secs
+Predicted frames: 25335/25335
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 576.8424036502838,
+│   'start_timestamp': '2023-08-21 20:58:08.996592',
+│   'finish_timestamp': '2023-08-21 21:07:45.838980'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_144832_omission_and_competition_subejct_6_1_and_6_2/20221125_144832_omission_and_competition_subejct_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 21:07:50.743851
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 43.5 FPS
+Finished inference at: 2023-08-21 21:26:46.491260
+Total runtime: 1135.7474248409271 secs
+Predicted frames: 47363/47363
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1135.7474248409271,
+│   'start_timestamp': '2023-08-21 21:07:50.743851',
+│   'finish_timestamp': '2023-08-21 21:26:46.491260'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 21:26:50.730572
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 43.3 FPS
+Finished inference at: 2023-08-21 21:45:24.140388
+Total runtime: 1113.409830570221 secs
+Predicted frames: 47363/47363
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1113.409830570221,
+│   'start_timestamp': '2023-08-21 21:26:50.730572',
+│   'finish_timestamp': '2023-08-21 21:45:24.140388'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221125_152723_competition_subject_6_1_and_6_2/20221125_152723_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 21:45:37.351204
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.5 FPS
+Finished inference at: 2023-08-21 22:19:59.997497
+Total runtime: 2062.64630818367 secs
+Predicted frames: 83387/83387
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 2062.64630818367,
+│   'start_timestamp': '2023-08-21 21:45:37.351204',
+│   'finish_timestamp': '2023-08-21 22:19:59.997497'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4...
+Started inference at: 2023-08-21 22:20:04.530856
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.6 FPS
+Finished inference at: 2023-08-21 22:53:04.848941
+Total runtime: 1980.3181011676788 secs
+Predicted frames: 83387/83387
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1980.3181011676788,
+│   'start_timestamp': '2023-08-21 22:20:04.530856',
+│   'finish_timestamp': '2023-08-21 22:53:04.848941'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221202_134600_omission_and_competition_subject_6_1_and_6_2/20221202_134600_omission_and_competition_subject_6_1_and_6_2.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4...
+Started inference at: 2023-08-21 22:53:39.920336
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.5 FPS
+Finished inference at: 2023-08-21 23:28:35.081307
+Total runtime: 2095.160987138748 secs
+Predicted frames: 84306/84306
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 2095.160987138748,
+│   'start_timestamp': '2023-08-21 22:53:39.920336',
+│   'finish_timestamp': '2023-08-21 23:28:35.081307'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4...
+Started inference at: 2023-08-21 23:28:39.602026
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 40.8 FPS
+Finished inference at: 2023-08-22 00:03:04.135222
+Total runtime: 2064.533212661743 secs
+Predicted frames: 84306/84306
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 2064.533212661743,
+│   'start_timestamp': '2023-08-21 23:28:39.602026',
+│   'finish_timestamp': '2023-08-22 00:03:04.135222'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1/20221203_154800_omission_and_competition_subject_6_4_and_6_1.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-22 00:04:00.929929
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.1 FPS
+Finished inference at: 2023-08-22 00:35:20.041621
+Total runtime: 1879.1117100715637 secs
+Predicted frames: 73601/73601
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1879.1117100715637,
+│   'start_timestamp': '2023-08-22 00:04:00.929929',
+│   'finish_timestamp': '2023-08-22 00:35:20.041621'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-22 00:35:24.584221
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.6 FPS
+Finished inference at: 2023-08-22 01:05:10.564176
+Total runtime: 1785.979972600937 secs
+Predicted frames: 73601/73601
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1785.979972600937,
+│   'start_timestamp': '2023-08-22 00:35:24.584221',
+│   'finish_timestamp': '2023-08-22 01:05:10.564176'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221214_125409_om_and_comp_6_1_and_6_3/20221214_125409_om_and_comp_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-22 01:05:55.395691
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 1,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 1,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.0 FPS
+Finished inference at: 2023-08-22 01:37:19.508248
+Total runtime: 1884.11257147789 secs
+Predicted frames: 76455/76455
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 1 --tracking.target_instance_count 1 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1884.11257147789,
+│   'start_timestamp': '2023-08-22 01:05:55.395691',
+│   'finish_timestamp': '2023-08-22 01:37:19.508248'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.1_subj.round_1.predicted_frames.slp
+Processing /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4...
+Started inference at: 2023-08-22 01:37:23.979058
+Args:
+{
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4',
+│   'models': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup'
+│   ],
+│   'frames': '',
+│   'only_labeled_frames': False,
+│   'only_suggested_frames': False,
+│   'output': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'no_empty_frames': False,
+│   'verbosity': 'rich',
+│   'video.dataset': None,
+│   'video.input_format': 'channels_last',
+│   'video.index': '',
+│   'cpu': False,
+│   'first_gpu': False,
+│   'last_gpu': False,
+│   'gpu': 'auto',
+│   'max_edge_length_ratio': 0.25,
+│   'dist_penalty_weight': 1.0,
+│   'batch_size': 1,
+│   'open_in_gui': False,
+│   'peak_threshold': 0.2,
+│   'tracking.tracker': 'flow',
+│   'tracking.target_instance_count': 2,
+│   'tracking.pre_cull_to_target': None,
+│   'tracking.pre_cull_iou_threshold': None,
+│   'tracking.post_connect_single_breaks': None,
+│   'tracking.clean_instance_count': 2,
+│   'tracking.clean_iou_threshold': None,
+│   'tracking.similarity': 'iou',
+│   'tracking.match': 'greedy',
+│   'tracking.robust': None,
+│   'tracking.track_window': None,
+│   'tracking.min_new_track_points': None,
+│   'tracking.min_match_points': None,
+│   'tracking.img_scale': None,
+│   'tracking.of_window_size': None,
+│   'tracking.of_max_levels': None,
+│   'tracking.save_shifted_instances': None,
+│   'tracking.kf_node_indices': None,
+│   'tracking.kf_init_frame_count': None
+}
+
+INFO:sleap.nn.inference:Auto-selected GPU 0 with 10998 MiB of free memory.
+Versions:
+SLEAP: 1.3.0
+TensorFlow: 2.6.3
+Numpy: 1.19.5
+Python: 3.7.12
+OS: Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid
+
+System:
+GPUs: 1/1 available
+  Device: /physical_device:GPU:0
+         Available: True
+        Initalized: False
+     Memory growth: True
+
+Video: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4
+Predicting... ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% ETA: 0:00:00 41.6 FPS
+Finished inference at: 2023-08-22 02:07:44.473668
+Total runtime: 1820.4946248531342 secs
+Predicted frames: 76455/76455
+Provenance:
+{
+│   'model_paths': [
+│   │   '/nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup/training_config.json'
+│   ],
+│   'predictor': 'BottomUpPredictor',
+│   'sleap_version': '1.3.0',
+│   'platform': 'Linux-5.15.0-76-generic-x86_64-with-debian-bullseye-sid',
+│   'command': '/home/riwata/miniconda3/envs/sleap_1_3_0/bin/sleap-track /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4 --tracking.tracker flow --tracking.similarity iou --tracking.match greedy --tracking.clean_instance_count 2 --tracking.target_instance_count 2 --batch_size 1 -m /nancy/projects/reward_competition_extention/results/2023_06_15_sleap_preprocessing/models/round_1_baseline_medium_rf.bottomup -o /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'data_path': '/scratch/back_up/reward_competition_extention/proc/reencoded_videos/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.mp4',
+│   'output_path': '/scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp',
+│   'total_elapsed': 1820.4946248531342,
+│   'start_timestamp': '2023-08-22 01:37:23.979058',
+│   'finish_timestamp': '2023-08-22 02:07:44.473668'
+}
+
+Saved output: /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20221215_145401_comp_amd_om_6_1_and_6_3/20221215_145401_comp_amd_om_6_1_and_6_3.1.fixed.2_subj.round_1.predicted_frames.slp
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3/20230612_101430_standard_comp_to_training_D1_subj_1-4_and_1-3.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1/20230612_101935_standard_comp_to_training_D1_subj_2-2_and_2-1.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1/20230612_112630_standard_comp_to_training_D1_subj_1-2_and_1-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4/20230613_105657_standard_comp_to_training_D2_subj_1-1_and_1-4.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2/20230613_110126_standard_comp_to_training_D2_subj_2-4_and_2-2.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2/20230614_114041_standard_comp_to_training_D3_subj_1-1_and_1-2.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4/20230614_115827_standard_comp_to_training_D3_subj_2-1_and_2-4.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2/20230616_111904_standard_comp_to_training_D4_subj_1-4_and_1-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2/20230616_111904_standard_comp_to_training_D4_subj_2-1_and_2-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2/20230617_115521_standard_comp_to_omission_D1_subj_1-1_and_1-2.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.4.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.4.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4/20230617_115641_standard_comp_to_omission_D1_subj_2-2_and_2-4.4.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1/20230618_100636_standard_comp_to_omission_D2_subj_1-4_and_1-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1/20230618_100646_standard_comp_to_omission_D2_subj_2-4_and_2-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.4.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.4.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4/20230619_115321_standard_comp_to_omission_D3_subj_1-2_and_1-4.4.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1/20230619_115334_standard_comp_to_omission_D3_subj_2-2_and_2-1.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1/20230620_114347_standard_comp_to_omission_D4_subj_1-2_and_1-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2/20230621_111240_standard_comp_to_omission_D5_subj_1-4_and_1-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2/20230622_110832_standard_comp_to_both_rewarded_D1_subj_1-1_and_1-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.4.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.4.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2/20230622_111445_standard_comp_to_alone_D1_subj_2-4_and_2-2.4.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1/20230623_114932_standard_comp_to_both_rewarded_D2_subj_1-4_and_1-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.3.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.3.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4/20230623_115501_standard_comp_to_alone_D2_subj_2-1_and_2-4.3.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4/20230624_105855_standard_comp_to_both_rewarded_D3_subj_1-2_and_1-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.2.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.2.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1/20230624_110052_standard_comp_to_alone_D3_subj_2-2_and_2-1.2.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+Currently starting: /scratch/back_up/reward_competition_extention/proc/reencoded_videos/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4.1.fixed.mp4
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4.1.fixed.1_subj.round_1.predicted_frames.slp already exists, skipping...
+Output file /scratch/back_up/reward_competition_extention/proc/predicted_frames/round_1/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4/20230625_112913_standard_comp_to_both_rewarded_D4_subj_1-1_and_1-4.1.fixed.2_subj.round_1.predicted_frames.slp already exists, skipping...
+All Done!
