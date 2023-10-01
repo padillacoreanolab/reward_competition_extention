@@ -46,6 +46,9 @@ pip install jupyterlab_flake8
 # GPFA
 conda install -c conda-forge tqdm --yes
 pip install elephant
+
+# For Grainger Causality
+conda install -c anaconda statsmodels --yes
 ```
 
 # SLEAP Environment
