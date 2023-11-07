@@ -49,7 +49,26 @@ pip install elephant
 
 # For Grainger Causality
 conda install -c anaconda statsmodels --yes
+
+# For checking if phase locking values have uniform distribution
+conda install astropy
+
+# For graphical neural networks
+conda install -c pytorch pytorch --yes
+conda install -c stellargraph stellargraph --yes
+conda install -c conda-forge tensorflow --yes
+conda install -c conda-forge tensorflow=2.13.1
+conda install -c anaconda chardet --yes
+
 ```
+
+# Stellargraph Enviornment
+conda create -n stellar_graph python=3.6 --yes
+conda activate stellar_graph
+conda install -c conda-forge jupyterlab --yes
+conda install -c stellargraph stellargraph --yes
+
+
 
 # SLEAP Environment
 conda create -y -n sleap_1_3_0 -c sleap -c nvidia -c conda-forge sleap=1.3.0 
