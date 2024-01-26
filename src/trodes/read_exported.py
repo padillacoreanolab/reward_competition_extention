@@ -112,6 +112,7 @@ def read_trodes_extracted_data_file(filename):
         dt = parse_fields(fields_text['fields'])
         data = np.fromfile(f, dt)
         fields_text.update({'data': data})
+        fields_text.update({'filename': os.path.basename(filename)})
         return fields_text
     
 def organize_single_trodes_export(dir_path, skip_raw_group0=True):

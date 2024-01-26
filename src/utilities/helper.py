@@ -2,6 +2,7 @@
 """
 """
 
+
 def compute_sorted_index(group, value_column='Value', index_column='SortedIndex'):
     """ 
     Computes the index of each row's value within its sorted group.
@@ -17,6 +18,7 @@ def compute_sorted_index(group, value_column='Value', index_column='SortedIndex'
     sorted_values = sorted(list(set(group[value_column].tolist())))
     group[index_column] = group[value_column].apply(lambda x: sorted_values.index(x))
     return group
+
 
 def find_closest_index(sorted_list=None, target=0):
     """
@@ -69,10 +71,12 @@ def find_closest_index(sorted_list=None, target=0):
     else:
         return right
 
+
 def main():
     """
     Main function that runs when the script is run
     """
+
 
 if __name__ == '__main__': 
     main()
