@@ -2,6 +2,8 @@
 """
 """
 from collections import defaultdict
+import numpy as np
+
 
 def create_recursive_dict():
     """
@@ -16,6 +18,7 @@ def create_recursive_dict():
                    of arbitrary depth.
     """
     return defaultdict(create_recursive_dict)
+
 
 def compute_sorted_index(group, value_column='Value', index_column='SortedIndex'):
     """ 
@@ -85,6 +88,7 @@ def find_nearest_index(sorted_list=None, target=0):
     else:
         return right
 
+
 def find_nearest_indices(array1, array2):
     """
     Finds the indices of the elements in array2 that are nearest to the elements in array1.
@@ -103,6 +107,7 @@ def find_nearest_indices(array1, array2):
     array1_flat = array1.flatten()
     indices = np.array([np.abs(array2 - num).argmin() for num in array1_flat])
     return indices.reshape(array1.shape)
+
 
 def main():
     """
