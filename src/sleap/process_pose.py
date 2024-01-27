@@ -2,6 +2,10 @@
 """
 """
 
+from scipy.interpolate import interp1d
+import numpy as np
+import h5py
+
 def get_sleap_tracks_from_h5(filename):
     """
     Retrieve pose tracking data (tracks) from a SLEAP-generated h5 file.
