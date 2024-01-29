@@ -109,6 +109,40 @@ def find_nearest_indices(array1, array2):
     return indices.reshape(array1.shape)
 
 
+def filter_by_timestamp_range(start, stop, timestamps, items):
+    """
+    Filters an array of timestamps and corresponding items based on a timestamp range.
+
+    Parameters:
+    - start (int or float): The start of the timestamp range.
+    - stop (int or float): The end of the timestamp range.
+    - timestamps (numpy.ndarray): A sorted array of timestamps.
+    - items (numpy.ndarray): An array of items corresponding to the timestamps.
+
+    Returns:
+    - tuple: Two numpy.ndarrays, the filtered timestamps and the corresponding items.
+    """
+    # Create a boolean mask for the timestamps within the range
+    mask = (timestamps >= start) & (timestamps <= stop)
+
+    # Apply the mask to the timestamps
+    filtered_timestamps = timestamps[mask]
+
+    # Apply the mask to the items, adjusting the length if necessary
+    if len(items) > len(mask):
+        # If items is longer than mask, shorten items
+        filtered_items = items[:len(mask)][mask]
+    elif len(items) < len(mask):
+        # If items is shorter than mask, pad items with NaNs
+        padded_items = np.pad(items, (0, len(mask) - len(items)), constant_values=np.nan)
+        filtered_items = padded_items[mask]
+    else:
+        # If items and mask are the same length, just apply the mask
+        filtered_items = items[mask]
+
+    return filtered_timestamps, filtered_items
+
+
 def main():
     """
     Main function that runs when the script is run
