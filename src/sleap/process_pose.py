@@ -190,3 +190,12 @@ def slice_and_zero(arr, frame_start, frame_end):
     result[frame_start:frame_end] = arr[frame_start:frame_end]
     
     return result
+
+def main():
+    """
+    Main function that runs when the script is run
+    """
+
+
+if __name__ == '__main__': 
+    main()

@@ -338,3 +338,12 @@ def get_all_trodes_data_from_directory(parent_directory_path="."):
                     directory_to_file_to_data[directory_prefix] = current_directory_to_file_to_data
     
     return directory_to_file_to_data
+
+def main():
+    """
+    Main function that runs when the script is run
+    """
+
+
+if __name__ == '__main__': 
+    main()
