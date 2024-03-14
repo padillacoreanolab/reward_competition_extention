@@ -47,6 +47,39 @@ def calculate_rolling_avg_firing_rate(firing_times, window_size=2000, slide=2000
 
     return np.array(avg_firing_rates), np.array(window_starts)
 
+def filter_outlier_timestamps(lfp_zscores, lfp_timestamps, event_timestamps, max_zscore=3):
+    """
+    Filter and return the indices of events based on LFP data that exceed a specified z-score threshold.
+
+    This function identifies outlier data points in LFP traces based on their z-scores, 
+    determines the corresponding event timestamps that these outliers fall into, and 
+    returns the indices of these events, excluding any that precede the first event.
+
+    Parameters:
+    - lfp_zscores (numpy.array): Array of z-scores for LFP data points.
+    - lfp_timestamps (numpy.array): Array of timestamps corresponding to the LFP data points.
+    - event_timestamps (numpy.array): Array of timestamps marking specific events or intervals.
+    - max_zscore (float): The z-score threshold used to classify data points as outliers. 
+      Data points with a z-score magnitude greater or equal to this threshold are considered outliers.
+
+    Returns:
+    - numpy.array: An array of indices for the events that contain outlier LFP data points, 
+      adjusted to ensure no indices precede the first event.
+    """
+    # Identify indices of LFP data points considered as outliers based on the z-score threshold
+    outlier_indices = np.where(np.abs(lfp_zscores) >= max_zscore)[0]
+
+    # Map the outlier LFP timestamps to their corresponding event timestamps
+    outlier_timestamps = lfp_timestamps[outlier_indices]
+
+    # Determine the event bin indices for each outlier timestamp
+    event_bin_indices = np.digitize(outlier_timestamps, event_timestamps, right=True) - 1
+
+    # Exclude outlier events occurring before the first event timestamp
+    valid_event_indices = event_bin_indices[event_bin_indices >= 0]
+
+    return valid_event_indices
+
 def main():
     """
     Main function that runs when the script is run
